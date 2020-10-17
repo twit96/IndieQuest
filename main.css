@@ -1,0 +1,66 @@
+:root {
+  /* storing reused colors */
+  --section-bg: #f2f2f2;
+}
+
+
+html {
+  /* set scrollbar always active */
+  height: 101%;
+
+  /* test background */
+  /* background-color: green; */
+}
+
+body {
+  /* remove default margin */
+  margin: 0;
+
+  /* test background */
+  /* background-color: yellow; */
+}
+
+
+#fixed-background {
+  /* fill entire view window */
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /* position behind all other content */
+  z-index: -1;
+  /* set background image */
+  background-image: url("/img/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* test background */
+  /* background-color: red; */
+}
+
+#top-nav {
+  padding: 5px;
+  background-color: blue;
+}
+
+
+#page-wrapper {
+  /* contents of page */
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 5px;
+
+  /* test background */
+  /* background-color: orange; */
+}
+
+
+section {
+  /* layout style */
+  padding: 1.5em;
+  margin: 0.75em auto;
+  /* self style */
+  background-color: var(--section-bg);
+  border-radius: 15px;
+}
