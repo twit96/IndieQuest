@@ -1,7 +1,8 @@
 /* Reused Variables -------------------------------------------------------- */
 :root {
   --nav-bg: #4f4f4f;
-  --section-bg: #f2f2f2;
+  --article-bg: #f2f2f2;
+  --section-bg: #fff;
 }
 
 /* Config Styles ----------------------------------------------------------- */
@@ -15,7 +16,7 @@
 html { height: 101%; }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Verdana, Geneva, sans-serif;
   line-height: 150%;
   /* background-color: yellow; */
 }
@@ -157,16 +158,26 @@ header a.active {
 /* Page Contents ----------------------------------------------------------- */
 article {
   /* layout style */
-  padding: 1em;
+  padding: 1.5em;
   margin: 0.5em;
   max-width: 100%;
   /* self style */
-  background-color: var(--section-bg);
+  background-color: var(--article-bg);
   border-radius: 15px;
 }
 
 article h1 {
   padding-bottom: 0.5em;
+}
+
+section {
+  /* layout style */
+  padding: 1.5em;
+  margin: 0.5em;
+  max-width: 100%;
+  /* self style */
+  background-color: var(--section-bg);
+  border-radius: 15px;
 }
 
 /* Footer ------------------------------------------------------------------ */
