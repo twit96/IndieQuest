@@ -271,14 +271,10 @@ footer {
   color: white;
  }
 
- /* accommodate fixed footer in page layout */
- #page-wrapper { padding-bottom: 50px; }
-
 /* reflow footer on small screens */
  @media (max-width: 650px) {
     footer {
       flex-direction: column;
       align-items: flex-start;
     }
-    #page-wrapper { padding-bottom: 75px; }
  }
