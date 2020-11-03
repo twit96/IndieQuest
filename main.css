@@ -269,8 +269,6 @@ footer {
   justify-content: space-between;
   align-items: center;
   color: white;
-  position: fixed;
-  left: 0; bottom: 0; right: 0;
  }
 
  /* accommodate fixed footer in page layout */
