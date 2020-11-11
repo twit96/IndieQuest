@@ -6,9 +6,13 @@ function set_active_link() {
   */
 
   // get page directory location
+  var url = $(location).attr('href').split( '/' );
+  console.log(url);
+  console.log( url[ url.length - 1 ] ); // 2
+  console.log( url[ url.length - 2 ] ); // projects
+
   var loc = window.location.pathname;
   var dir = loc.substring(loc.indexOf('/')+1, loc.lastIndexOf('/'));
-  console.log(dir, loc);
   if (dir == "/") { dir = "home"; }
 
   // add active class to corresponding page link element in header
