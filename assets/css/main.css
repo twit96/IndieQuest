@@ -1,0 +1,344 @@
+/*
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ TABLE OF CONTENTS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  - Reused Variables
+  - Config HTML Styles
+  - General Classes
+
+  - Background Image
+  - Top Banner
+  - Header
+
+  - Page Wrapper Layout
+  - Page Contents
+
+  - The Journey Page
+  - Contact Us Page
+
+  - Footer
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+
+/* Reused Variables -------------------------------------------------------- */
+:root {
+  --nav-bg: #4f4f4f;
+  --article-bg: #f2f2f2;
+  --section-bg: #fff;
+  --link-text: #248dd4;
+}
+
+/* Config HTML Styles ------------------------------------------------------ */
+* {
+  /* remove defaults from all elements */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* set scrollbar always active */
+html { height: 101%; }
+
+body {
+  /* font-family: Verdana, Geneva, sans-serif; */
+  font-family: Artifika;
+  line-height: 175%;
+  /* background-color: yellow; */
+}
+
+/* link style */
+a {
+  text-decoration: none;
+  color: var(--link-text);
+}
+
+a:hover { text-decoration: underline; }
+
+/* General Classes --------------------------------------------------------- */
+.btn {
+  padding: 0.5em 0.75em;
+  border-radius: 30px;
+  border: 0;
+  background-color: var(--link-text);
+  color: white;
+  font-weight: bold;
+  font-size: 0.85em;
+  text-align: center;
+}
+
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0 0.25em 0.1em var(--nav-bg);
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: 0 0 0.5em 0.1em var(--nav-bg) inset;
+}
+
+.r-float {
+  float: right;
+  margin-left: 1em;
+}
+
+/* Background Image -------------------------------------------------------- */
+#fixed-background {
+  /* fill entire view window */
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /* position behind all other content */
+  z-index: -1;
+  /* set background image */
+  background-image: url("../../assets/img/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Top Banner -------------------------------------------------------------- */
+#banner {
+  width: 100%;
+  height: 100px;
+  /* set background image */
+  background-image: url("../../assets/img/banner.png");
+  background-position: center;
+  /* background-size: cover; */
+  background-size: contain;
+  /* background-repeat: no-repeat; */
+  background-repeat: repeat;
+}
+
+/* Header ------------------------------------------------------------------ */
+header {
+  background-color: var(--nav-bg);
+  padding: 0.5em 5%;
+  color: white;
+}
+
+header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* class to fix header to top past certain scroll point */
+.fixed-header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  background-color: var(--nav-bg);
+  padding: 0.5em 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fixed-header + #page-wrapper {
+  /* reposition page-wrapper when header is fixed */
+  padding-top: 70px;
+}
+
+
+/* header links */
+header a {
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+}
+
+header a.active {
+  /* active link */
+  text-decoration: underline;
+}
+
+/* home link container (contains image and text) */
+#home-link {
+  display: flex;
+  align-items: center;
+}
+
+#home-link img {
+  max-width: 50px;
+  margin-right: 1em;
+}
+
+/* top navigation links */
+#top-nav { list-style: none; }
+
+#top-nav li {
+  display: inline-block;
+  margin: 0 0.5em;
+}
+
+/* reflow header on small screens */
+/* (TEMPFIX: To replace with Hamburger Menu) */
+ @media (max-width: 650px) {
+    header .wrapper { flex-direction: column; }
+    .fixed-header + #page-wrapper { padding-top: 96px; }
+    #logo { align-self: flex-start; }
+    #top-nav { align-self: flex-end; }
+ }
+
+/* Page Wrapper Layout ----------------------------------------------------- */
+#page-wrapper {
+  /* wrapper to center sidebars and page content in view window */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.25em;
+  display: flex;
+  justify-content: center;
+  /* background-color: blue; */
+}
+
+#center {
+  /* main page content */
+  min-width: 50%;
+  /* background-color: green; */
+}
+
+#left {
+  /* left sidebar */
+  min-width: 25%;
+  width: 25%;
+  /* background-color: red; */
+}
+
+#right {
+  /* right sidebar */
+  min-width: 25%;
+  width: 25%;
+  /* background-color: yellow; */
+}
+
+/* reflow page layout on small screens */
+@media (max-width: 900px) {
+  /* sidebars shift to top and bottom of page */
+  #page-wrapper { flex-direction: column-reverse; }
+
+  /* all content areas fill full screen width */
+  #center, #right, #left { min-width: 100%; }
+}
+
+/* Page Contents ----------------------------------------------------------- */
+article {
+  /* layout style */
+  padding: 1.25em;
+  margin: 0.75em 0.5em;
+  max-width: 100%;
+  /* self style */
+  background-color: var(--article-bg);
+  border-radius: 5px;
+  box-shadow: 0 0 0.5em 0.1em var(--nav-bg);
+}
+
+article p {
+  margin-top: 0.75em;
+}
+
+section {
+  /* layout style */
+  padding: 1.25em;
+  margin: 0.75em 0;
+  max-width: 100%;
+  /* self style */
+  background-color: var(--section-bg);
+  border-radius: 15px;
+  box-shadow: 0 0 0.5em 0.1em var(--nav-bg);
+}
+
+/* Homepage ---------------------------------------------------------------- */
+#login p { margin: 0 0 0.75em 0; }
+
+#login input[type=text] {
+  padding: 0.5em;
+  margin:  0;
+  border-radius: 15px;
+  border: 1px solid var(--nav-bg);
+  color: var(--link-text);
+}
+
+#login input[type=text]:focus {
+  outline: none;
+  border: 1px solid var(--link-text);
+  box-shadow: 0 0 0.25em 0.1em var(--link-text);
+}
+
+#login .buttons { margin-bottom: 0; }
+#login .btn { margin: 0 0.25em; }
+
+
+/* The Journey Page -------------------------------------------------------- */
+/* journey left and right columns */
+.journey h2 { font-size: 1.25em; }
+
+.journey section { margin: 0.75em 0; }
+
+.journey a {
+  display: block;
+  margin: 0.25em 0;
+  font-style: italic;
+}
+
+/* journey center articles */
+.journey #center h1 {
+  text-align: center;
+}
+
+.journey #center p {
+  text-indent: 1.5em;
+}
+
+/* Contact Us Page --------------------------------------------------------- */
+.contact #center {
+  /* main page content */
+  max-width: 75%;
+  display: flex;
+  flex-direction: column;
+  /* background-color: green; */
+}
+
+/* Profile Images */
+.contact .avatar {
+  width: 100px;
+  max-height: 50%;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 0.5em 0.1em var(--nav-bg);
+}
+
+/* @media (max-width: 650px) { .contact .avatar { width: 25%; } } */
+
+/* prevent floated profile images from overflowing container */
+.contact section { overflow: auto;}
+
+/* Contact Links */
+.contact nav { padding-top: 1em; }
+.contact a { margin-right: 0.5em; }
+
+
+/* Footer ------------------------------------------------------------------ */
+footer {
+  background-color: var(--nav-bg);
+  padding: 0.5em 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  position: fixed;
+  left: 0; bottom: 0; right: 0;
+ }
+
+/* accommodate fixed footer in page layout */
+#page-wrapper { padding-bottom: 50px; }
+
+/* reflow footer on small screens */
+ @media (max-width: 650px) {
+    footer {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    #page-wrapper { padding-bottom: 75px; }
+ }
