@@ -8,6 +8,7 @@ function set_active_link() {
   // get page directory location
   var loc = window.location.pathname;
   var dir = loc.substring(loc.indexOf('/')+1, loc.lastIndexOf('/'));
+  console.log(dir, loc);
   if (dir == "/") { dir = "home"; }
 
   // add active class to corresponding page link element in header
