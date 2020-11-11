@@ -4,19 +4,24 @@ function set_active_link() {
     function to set the active header link,
     based on the page's directory location.
   */
+  var linkname;  // store active link name
 
   // get page directory location
   var url = $(location).attr('href').split( '/' );
-  console.log(url);
-  console.log( url[ url.length - 1 ] ); // 2
-  console.log( url[ url.length - 2 ] ); // projects
+  var path = url[url.length-2];
 
-  var loc = window.location.pathname;
-  var dir = loc.substring(loc.indexOf('/')+1, loc.lastIndexOf('/'));
-  if (dir == "/") { dir = "home"; }
+  if (path == "journey" || path == "contact") { linkname = path; }
+  else { linkname = "home"; }
+  console.log(linkname);
+
+  // var loc = window.location.pathname;
+  // var dir = loc.substring(loc.indexOf('/')+1, loc.lastIndexOf('/'));
+  // if (dir == "/") { dir = "home"; }
 
   // add active class to corresponding page link element in header
-  $("#" + dir + "-link").addClass('active');
+  // $("#" + dir + "-link").addClass('active');
+  $("#" + linkname + "-link").addClass('active');
+
 }
 
 set_active_link()
