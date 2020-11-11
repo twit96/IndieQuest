@@ -10,16 +10,11 @@ function set_active_link() {
   var url = $(location).attr('href').split( '/' );
   var path = url[url.length-2];
 
+  // set linkname variable
   if (path == "journey" || path == "contact") { linkname = path; }
   else { linkname = "home"; }
-  console.log(linkname);
-
-  // var loc = window.location.pathname;
-  // var dir = loc.substring(loc.indexOf('/')+1, loc.lastIndexOf('/'));
-  // if (dir == "/") { dir = "home"; }
 
   // add active class to corresponding page link element in header
-  // $("#" + dir + "-link").addClass('active');
   $("#" + linkname + "-link").addClass('active');
 
 }
