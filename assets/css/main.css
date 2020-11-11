@@ -116,7 +116,7 @@ header {
   color: white;
 }
 
-header .wrapper {
+header .wrapper, .fixed-header .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -132,8 +132,6 @@ header .wrapper {
   right: 0;
   background-color: var(--nav-bg);
   padding: 0.5em 5%;
-  display: flex;
-  justify-content: space-between;
 }
 
 .fixed-header + #page-wrapper {
