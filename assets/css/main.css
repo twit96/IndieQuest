@@ -174,12 +174,10 @@ header a.active {
 }
 
 /* reflow header on small screens */
-/* (TEMPFIX: To replace with Hamburger Menu) */
  @media (max-width: 650px) {
     header .wrapper { flex-direction: column; }
     .fixed-header + #page-wrapper { padding-top: 96px; }
-    #logo { align-self: flex-start; }
-    #top-nav { align-self: flex-end; }
+    #home-link { margin-bottom: 0.5em; }
  }
 
 /* Page Wrapper Layout ----------------------------------------------------- */
