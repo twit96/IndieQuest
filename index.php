@@ -7,8 +7,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/js/header_state.js" defer></script>
-
+    <script src="assets/js/header_state.js" defer></script>
+    <script src="assets/js/profile_popup.js" defer></script>
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Artifika" />
   </head>
 
@@ -29,10 +29,59 @@
         <ul id="top-nav">
           <li><a id="journey-link" href="journey/">The Journey</a></li>
           <li><a id="contact-link" href="contact/">Contact</a></li>
-          <li><a id="profile-link" href="#">Profile</a></li>
+          <li id="profile-icon"><img id="profile-link" src="assets/img/profile.svg" onclick="openForm()" /></li>
         </ul>
       </div>
     </header>
+
+    <!-- Profile Popup -->
+    <div id="profile">
+      <article>
+        <?php
+          echo '<input class="btn x r-float" type="button" onclick="closeForm()" value="X">';
+          // if logged in
+          if (isset($_POST['username']) && $_POST['username'] != "" && isset($_POST['password']) && $_POST['password'] != "") {
+            echo "<h1>Good to see you, " . $_POST['username'] . "!</h1>";
+            $user_text = <<<USER
+            <form method="POST">
+              <p class="buttons">
+                <input class="btn" type="submit" value="Logout">
+              </p>
+            </form>
+            USER;
+            echo $user_text;
+
+          // if logged out
+          } else {
+            $guest_text = <<<GUEST
+            <h1>Sign Up / Login</h1>
+            <p>
+              Create an account to start your quest!
+            </p>
+
+            <section>
+              <form id="login" method="POST">
+                  <p>
+                    Username:
+                    <input name="username" type="text" size="10" placeholder="Enter Text Here" />
+                  </p>
+                  <p>
+                    Password:
+                    <input name="password" type="text" size="10" placeholder="Enter Text Here" />
+                  </p>
+
+                <p class="buttons">
+                  <input class="btn" id="submit" type="submit" value="Login">
+                  <input class="btn" type="reset" value="Clear">
+                </p>
+              </form>
+            </section>
+            GUEST;
+            echo $guest_text;
+          }
+        ?>
+      </article>
+    </div>
 
     <!-- wrapper to center content within body -->
     <div id="page-wrapper">
@@ -102,29 +151,13 @@
 
             // if logged out
             } else {
+              echo "<h1>Hello Stranger!</h1>";
               $guest_text = <<<GUEST
-              <h1>Sign Up / Login</h1>
-              <p>
-                Create an account to start your quest!
-              </p>
-
-              <section>
-                <form id="login" method="POST">
-                    <p>
-                      Username:
-                      <input name="username" type="text" size="10" placeholder="Enter Text Here" />
-                    </p>
-                    <p>
-                      Password:
-                      <input name="password" type="text" size="10" placeholder="Enter Text Here" />
-                    </p>
-
-                  <p class="buttons">
-                    <input class="btn" id="submit" type="submit" value="Login">
-                    <input class="btn" type="reset" value="Clear">
-                  </p>
-                </form>
-              </section>
+              <form method="POST">
+                <p class="buttons">
+                  <input class="btn" type="button" onclick="openForm()" value="Login">
+                </p>
+              </form>
               GUEST;
               echo $guest_text;
             }

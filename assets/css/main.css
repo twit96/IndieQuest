@@ -9,7 +9,7 @@
   - Background Image
   - Top Banner
   - Header
-  - Footer
+  - Profile Popup
 
   Page Layout
   - Page Wrapper Layout (Responsive/Multi-column)
@@ -113,6 +113,12 @@ a.active {
   box-shadow: 0 0 0.5em 0.1em var(--nav-bg) inset;
 }
 
+.btn.x {
+  /* just an x button */
+  background-color: red;
+  text-align: center;
+}
+
 .r-float {
   /* right float */
   float: right;
@@ -200,11 +206,32 @@ header a {
 }
 
 /* top navigation links */
-#top-nav { list-style: none; }
+#top-nav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
 
 #top-nav li {
-  display: inline-block;
   margin: 0 0.5em;
+  display: flex;
+  align-items: center;
+}
+
+/* profile icon */
+#profile-icon {
+  border-radius: 50%;
+  /* border: 2px solid var(--nav-bg); */
+}
+
+#profile-icon img {
+  min-width: 25px;
+}
+
+#profile-icon:hover {
+  /* border: 2px dotted white; */
+  box-shadow: 0 0 0.5em 0.25em var(--link-text) inset;
+  cursor: pointer;
 }
 
 /* reflow header on small screens */
@@ -213,6 +240,25 @@ header a {
     .fixed-header + #page-wrapper { padding-top: 96px; }
     #home-link { margin-bottom: 0.5em; }
  }
+
+/* Profile Popup ----------------------------------------------------------- */
+#profile {
+  width: 90vw;
+  max-width: 400px;
+  /* position top left corner of container exactly in center of window */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* reposition based off size of container for perfect center */
+  transform: translate(-50%, -50%);
+  /* default: do not display */
+  display: none;
+
+  margin: 0;
+}
+#profile article {
+  box-shadow: 0 0 0 100vmax #00000066;
+}
 
 /* Page Wrapper Layout ----------------------------------------------------- */
 #page-wrapper {
