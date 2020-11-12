@@ -1,23 +1,27 @@
 /*
   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ TABLE OF CONTENTS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  Config Styles
   - Reused Variables
-  - Config HTML Styles
+  - HTML Elements
   - General Classes
 
+  Background and Top Navigation
   - Background Image
   - Top Banner
   - Header
+  - Footer
 
-  - Page Wrapper Layout
-  - Page Contents
-
+  Page Layout
+  - Page Wrapper Layout (Responsive/Multi-column)
+  - Homepage
   - The Journey Page
   - Contact Us Page
 
+  Bottom Navigation
   - Footer
+
   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
-
 
 /* Reused Variables -------------------------------------------------------- */
 :root {
@@ -27,7 +31,7 @@
   --link-text: #248dd4;
 }
 
-/* Config HTML Styles ------------------------------------------------------ */
+/* HTML Elements ----------------------------------------------------------- */
 * {
   /* remove defaults from all elements */
   margin: 0;
@@ -53,8 +57,42 @@ a {
 
 a:hover { text-decoration: underline; }
 
+
+/* content areas */
+article {
+  /* layout style */
+  padding: 1.25em;
+  margin: 0.75em 0.5em;
+  max-width: 100%;
+  /* self style */
+  background-color: var(--article-bg);
+  border-radius: 5px;
+  box-shadow: 0 0 0.5em 0.1em var(--nav-bg);
+}
+
+article p {
+  margin-top: 0.75em;
+}
+
+section {
+  /* layout style */
+  padding: 1.25em;
+  margin: 0.75em 0;
+  max-width: 100%;
+  /* self style */
+  background-color: var(--section-bg);
+  border-radius: 15px;
+  box-shadow: 0 0 0.5em 0.1em var(--nav-bg);
+}
+
 /* General Classes --------------------------------------------------------- */
+a.active {
+  /* active links */
+  text-decoration: underline;
+}
+
 .btn {
+  /* styled buttons */
   padding: 0.5em 0.75em;
   border-radius: 30px;
   border: 0;
@@ -76,8 +114,19 @@ a:hover { text-decoration: underline; }
 }
 
 .r-float {
+  /* right float */
   float: right;
   margin-left: 1em;
+}
+
+.wrapper {
+  /* general content wrapper */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* Background Image -------------------------------------------------------- */
@@ -116,14 +165,6 @@ header {
   color: white;
 }
 
-header .wrapper, .fixed-header .wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 /* class to fix header to top past certain scroll point */
 .fixed-header {
   position: fixed;
@@ -145,11 +186,6 @@ header a {
   color: white;
   text-decoration: none;
   border-radius: 30px;
-}
-
-header a.active {
-  /* active link */
-  text-decoration: underline;
 }
 
 /* home link container (contains image and text) */
@@ -210,39 +246,12 @@ header a.active {
 }
 
 /* reflow page layout on small screens */
-@media (max-width: 900px) {
+@media (max-width: 930px) {
   /* sidebars shift to top and bottom of page */
   #page-wrapper { flex-direction: column-reverse; }
 
   /* all content areas fill full screen width */
   #center, #right, #left { min-width: 100%; }
-}
-
-/* Page Contents ----------------------------------------------------------- */
-article {
-  /* layout style */
-  padding: 1.25em;
-  margin: 0.75em 0.5em;
-  max-width: 100%;
-  /* self style */
-  background-color: var(--article-bg);
-  border-radius: 5px;
-  box-shadow: 0 0 0.5em 0.1em var(--nav-bg);
-}
-
-article p {
-  margin-top: 0.75em;
-}
-
-section {
-  /* layout style */
-  padding: 1.25em;
-  margin: 0.75em 0;
-  max-width: 100%;
-  /* self style */
-  background-color: var(--section-bg);
-  border-radius: 15px;
-  box-shadow: 0 0 0.5em 0.1em var(--nav-bg);
 }
 
 /* Homepage ---------------------------------------------------------------- */
@@ -314,7 +323,6 @@ section {
 .contact nav { padding-top: 1em; }
 .contact a { margin-right: 0.5em; }
 
-
 /* Footer ------------------------------------------------------------------ */
 footer {
   background-color: var(--nav-bg);
@@ -331,10 +339,10 @@ footer {
 #page-wrapper { padding-bottom: 50px; }
 
 /* reflow footer on small screens */
- @media (max-width: 650px) {
-    footer {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-    #page-wrapper { padding-bottom: 75px; }
- }
+@media (max-width: 650px) {
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #page-wrapper { padding-bottom: 75px; }
+}
