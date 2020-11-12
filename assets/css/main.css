@@ -233,7 +233,7 @@ header a {
 /* reflow header on small screens */
  @media (max-width: 650px) {
     header .wrapper { flex-direction: column; }
-    .fixed-header + #page-wrapper { padding-top: 96px; }
+    .fixed-header + #page-wrapper { padding-top: 106px; }
     #home-link { margin-bottom: 0.5em; }
  }
 
