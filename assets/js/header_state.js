@@ -16,7 +16,6 @@ function set_active_link() {
 
   // add active class to corresponding page link element in header
   $("#" + linkname + "-link").addClass('active');
-
 }
 
 set_active_link()
