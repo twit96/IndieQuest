@@ -4,22 +4,18 @@
   - Reused Variables
   - HTML Elements
   - General Classes
-
   Background and Top Navigation
   - Background Image
   - Top Banner
   - Header
   - Profile Popup
-
   Page Layout
   - Page Wrapper Layout (Responsive/Multi-column)
   - Homepage
   - The Journey Page
   - Contact Us Page
-
   Bottom Navigation
   - Footer
-
   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 
@@ -256,6 +252,18 @@ header a {
 
   margin: 0;
 }
+
+.popup-bg {
+  /* empty div to dim page elements behind popup */
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
 #profile article {
   box-shadow: 0 0 0 100vmax #00000066;
 }

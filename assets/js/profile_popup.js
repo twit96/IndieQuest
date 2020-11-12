@@ -1,9 +1,11 @@
+/* functions to allow user to open and close login popup */ 
+
 function openForm() {
-  $('#profile').show()
-  // document.getElementById("profile").style.display = "block";
+  $('#profile').show();
+  $('.popup-bg').show();
 }
 
 function closeForm() {
-  $('#profile').hide()
-  document.getElementById("profile").style.display = "none";
+  $('#profile').hide();
+  $('.popup-bg').hide();
 }
