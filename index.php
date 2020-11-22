@@ -35,8 +35,8 @@
     </header>
 
     <!-- Profile Popup -->
-    <div id="profile">
-      <article>
+    <div class="popup-bg">
+      <article id="profile">
         <?php
           echo '<input class="btn x r-float" type="button" onclick="closeForm()" value="X">';
           // if logged in
