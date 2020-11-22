@@ -147,8 +147,10 @@ GUEST;
     </div>
 
     <footer>
-      <span>2020/11/11</span>
-      <span>Alexia Carmona, Cooper Fryar, Tyler Wittig</span>
+      <div class="wrapper">
+        <span>2020/11/11</span>
+        <span>Alexia Carmona, Cooper Fryar, Tyler Wittig</span>
+      </div>
     </footer>
 
   </body>

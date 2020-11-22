@@ -390,7 +390,7 @@ footer {
 
 /* reflow footer on small screens */
 @media (max-width: 650px) {
-  footer {
+  footer .wrapper {
     flex-direction: column;
     align-items: flex-start;
   }
