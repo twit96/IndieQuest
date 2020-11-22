@@ -50,7 +50,7 @@
                   <input class="btn" type="submit" value="Logout">
                 </p>
               </form>
-      USER;
+USER;
               echo $user_text;
 
             // if logged out
@@ -78,7 +78,7 @@
                   </p>
                 </form>
               </section>
-      GUEST;
+GUEST;
               echo $guest_text;
             }
           ?>
