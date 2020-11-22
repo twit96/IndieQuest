@@ -9,8 +9,3 @@ function closeForm() {
   $('#profile').hide();
   $('.popup-bg').hide();
 }
-
-// hide popup if user clicks elsewhere
-$('.popup-bg').click(function() {
-  closeForm();
-});
