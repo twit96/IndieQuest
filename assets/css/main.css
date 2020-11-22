@@ -238,20 +238,6 @@ header a {
  }
 
 /* Profile Popup ----------------------------------------------------------- */
-#profile {
-  width: 90vw;
-  max-width: 400px;
-  /* position top left corner of container exactly in center of window */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  /* reposition based off size of container for perfect center */
-  transform: translate(-50%, -50%);
-  /* default: do not display */
-  display: none;
-  z-index: 2;
-}
-
 .popup-bg {
   /* empty div to dim page elements behind popup */
   position: fixed;
@@ -264,8 +250,18 @@ header a {
   z-index: 1;
 }
 
-#profile article {
-  box-shadow: 0 0 0 100vmax #00000066;
+#profile {
+  width: 90vw;
+  max-width: 400px;
+  /* position top left corner of container exactly in center of window */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* reposition based off size of container for perfect center */
+  transform: translate(-50%, -50%);
+  /* default: do not display */
+  display: none;
+  z-index: 2;
 }
 
 /* Page Wrapper Layout ----------------------------------------------------- */
