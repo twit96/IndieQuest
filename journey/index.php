@@ -2,7 +2,7 @@
 <html lang="en">
 
   <head>
-    <title>Contact Us</title>
+    <title>The Journey</title>
     <link rel="icon" href="../assets/img/logo.png" />
     <link rel="stylesheet" type="text/css" href="../assets/css/main.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
