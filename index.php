@@ -34,57 +34,57 @@
       </div>
     </header>
 
-    <!-- Profile Popup -->
-    <div class="popup-bg">
-      <article id="profile">
-        <?php
-          echo '<input class="btn x r-float" type="button" onclick="closeForm()" value="X">';
-          // if logged in
-          if (isset($_POST['username']) && $_POST['username'] != "" && isset($_POST['password']) && $_POST['password'] != "") {
-            echo "<h1>Good to see you, " . $_POST['username'] . "!</h1>";
-            $user_text = <<<USER
-            <form method="POST">
-              <p class="buttons">
-                <input class="btn" type="submit" value="Logout">
-              </p>
-            </form>
-USER;
-            echo $user_text;
-
-          // if logged out
-          } else {
-            $guest_text = <<<GUEST
-            <h1>Sign Up / Login</h1>
-            <p>
-              Create an account to start your quest!
-            </p>
-
-            <section>
-              <form id="login" method="POST">
-                  <p>
-                    Username:
-                    <input name="username" type="text" size="10" placeholder="Enter Text Here" />
-                  </p>
-                  <p>
-                    Password:
-                    <input name="password" type="text" size="10" placeholder="Enter Text Here" />
-                  </p>
-
-                <p class="buttons">
-                  <input class="btn" id="submit" type="submit" value="Login">
-                  <input class="btn" type="reset" value="Clear">
-                </p>
-              </form>
-            </section>
-GUEST;
-            echo $guest_text;
-          }
-        ?>
-      </article>
-    </div>
-
     <!-- wrapper to center content within body -->
     <div id="page-wrapper">
+
+      <!-- Profile Popup -->
+      <div class="popup-bg">
+        <article id="profile">
+          <?php
+            echo '<input class="btn x r-float" type="button" onclick="closeForm()" value="X">';
+            // if logged in
+            if (isset($_POST['username']) && $_POST['username'] != "" && isset($_POST['password']) && $_POST['password'] != "") {
+              echo "<h1>Good to see you, " . $_POST['username'] . "!</h1>";
+              $user_text = <<<USER
+              <form method="POST">
+                <p class="buttons">
+                  <input class="btn" type="submit" value="Logout">
+                </p>
+              </form>
+      USER;
+              echo $user_text;
+
+            // if logged out
+            } else {
+              $guest_text = <<<GUEST
+              <h1>Sign Up / Login</h1>
+              <p>
+                Create an account to start your quest!
+              </p>
+
+              <section>
+                <form id="login" method="POST">
+                    <p>
+                      Username:
+                      <input name="username" type="text" size="10" placeholder="Enter Text Here" />
+                    </p>
+                    <p>
+                      Password:
+                      <input name="password" type="text" size="10" placeholder="Enter Text Here" />
+                    </p>
+
+                  <p class="buttons">
+                    <input class="btn" id="submit" type="submit" value="Login">
+                    <input class="btn" type="reset" value="Clear">
+                  </p>
+                </form>
+              </section>
+      GUEST;
+              echo $guest_text;
+            }
+          ?>
+        </article>
+      </div>
 
       <div id="center">
         <article>
