@@ -1,4 +1,4 @@
-/* functions to allow user to open and close login popup */ 
+/* functions to allow user to open and close login popup */
 
 function openForm() {
   $('#profile').show();
@@ -9,3 +9,8 @@ function closeForm() {
   $('#profile').hide();
   $('.popup-bg').hide();
 }
+
+// hide popup if user clicks elsewhere
+$('.popup-bg').click(function() {
+  closeForm();
+});

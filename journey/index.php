@@ -2,14 +2,12 @@
 <html lang="en">
 
   <head>
-    <meta charset="UTF-8">
     <title>Contact Us</title>
     <link rel="icon" href="../assets/img/logo.png" />
     <link rel="stylesheet" type="text/css" href="../assets/css/main.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="../assets/js/header_state.js" defer></script>
-    <script src="../assets/js/profile_popup.js" defer></script>
     <script src="../assets/js/profile_popup.js" defer></script>
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Artifika" />
   </head>
@@ -36,36 +34,56 @@
       </div>
     </header>
 
-    <div id="page-wrapper" class="journey">
-
-      <!-- Profile Popup -->
-      <div class="popup-bg">
-        <article id="profile">
-          <input class="btn x r-float" type="button" onclick="closeForm()" value="X">
-          <h1>Sign Up / Login</h1>
-          <p>
-            Create an account to start your quest!
-          </p>
-
-          <section>
-            <form id="login" method="POST">
-                <p>
-                  Username:
-                  <input name="username" type="text" size="10" placeholder="Enter Text Here" />
-                </p>
-                <p>
-                  Password:
-                  <input name="password" type="text" size="10" placeholder="Enter Text Here" />
-                </p>
-
+    <!-- Profile Popup -->
+    <div id="profile">
+      <article>
+        <?php
+          echo '<input class="btn x r-float" type="button" onclick="closeForm()" value="X">';
+          // if logged in
+          if (isset($_POST['username']) && $_POST['username'] != "" && isset($_POST['password']) && $_POST['password'] != "") {
+            echo "<h1>Good to see you, " . $_POST['username'] . "!</h1>";
+            $user_text = <<<USER
+            <form method="POST">
               <p class="buttons">
-                <input class="btn" id="submit" type="submit" value="Login">
-                <input class="btn" type="reset" value="Clear">
+                <input class="btn" type="submit" value="Logout">
               </p>
             </form>
-          </section>
-        </article>
-      </div>
+USER;
+            echo $user_text;
+
+          // if logged out
+          } else {
+            $guest_text = <<<GUEST
+            <h1>Sign Up / Login</h1>
+            <p>
+              Create an account to start your quest!
+            </p>
+
+            <section>
+              <form id="login" method="POST">
+                  <p>
+                    Username:
+                    <input name="username" type="text" size="10" placeholder="Enter Text Here" />
+                  </p>
+                  <p>
+                    Password:
+                    <input name="password" type="text" size="10" placeholder="Enter Text Here" />
+                  </p>
+
+                <p class="buttons">
+                  <input class="btn" id="submit" type="submit" value="Login">
+                  <input class="btn" type="reset" value="Clear">
+                </p>
+              </form>
+            </section>
+GUEST;
+            echo $guest_text;
+          }
+        ?>
+      </article>
+    </div>
+
+    <div id="page-wrapper" class="journey">
 
       <div id="left">
         <article>
