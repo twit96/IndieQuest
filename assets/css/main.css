@@ -238,18 +238,6 @@ header a {
  }
 
 /* Profile Popup ----------------------------------------------------------- */
-.popup-bg {
-  /* empty div to dim page elements behind popup */
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  width: 100%;
-  height: 100%;
-  display: none;
-  z-index: 1;
-}
-
 #profile {
   width: 90vw;
   max-width: 400px;
@@ -262,6 +250,22 @@ header a {
   /* default: do not display */
   display: none;
   z-index: 2;
+}
+
+.popup-bg {
+  /* empty div to dim page elements behind popup */
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 1;
+}
+
+#profile article {
+  box-shadow: 0 0 0 100vmax #00000066;
 }
 
 /* Page Wrapper Layout ----------------------------------------------------- */
