@@ -52,12 +52,13 @@
             </p>
             <p>
               Her main focus is becoming a video game artist as well as having
-              a background in computer science languages.
+              a background in computer science languages, such as Python, HTML, and Javascript.
+              She has experience in developing games by creating character art, UI art, and environment art for multiple games.
             </p>
             <nav>
-              <a class="btn" href="https://github.com/UsagiUchiha">GitHub</a>
+              <a class="btn" href="https://www.linkedin.com/in/alexia-carmona-bb1240181/">LinkedIn</a>
+              <a class="btn" href="https://www.lexc-draws.com/">Portfolio</a>
               <a class="btn" href="mailto:carmona.m.alexia@gmail.com">Email</a>
-              <!-- <a href="">LinkedIn</a> -->
             </nav>
           </section>
 

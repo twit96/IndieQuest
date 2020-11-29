@@ -49,7 +49,7 @@
               <a class="active" href="index.php">Minecraft</a>
               <a href="Limbo.php">Limbo</a>
               <a href="Amnesia.php">Amnesia: The Dark Descent</a>
-	            <a href="BindingOfIsaac.php">The Binding of Isaac</a>
+	      <a href="BindingOfIsaac.php">The Binding of Isaac</a>
             </nav>
           </section>
 
@@ -59,7 +59,7 @@
               <a href="Evoland.php">Evoland</a>
               <a href="FlappyBird.php">Flappy Bird</a>
               <a href="GoatSimulator.php">Goat Simulator</a>
-	            <a href="FNAF.php">Five Night's At Freddy's</a>
+	      <a href="FNAF.php">Five Night's At Freddy's</a>
             </nav>
           </section>
 
@@ -68,8 +68,8 @@
             <nav>
               <a href="Undertale.php">Undertale</a>
               <a href="RocketLeague.php">Rocket League</a>
-	            <a href="Cuphead.php">Cuphead</a>
-	            <a href="GettingOverIt.php">Getting Over It</a>
+	      <a href="Cuphead.php">Cuphead</a>
+	      <a href="GettingOverIt.php">Getting Over It</a>
             </nav>
           </section>
 
@@ -78,7 +78,7 @@
             <nav>
               <a href="AmongUs.php">Among Us</a>
               <a href="FallGuys.php">Fall Guys: Ultimate Knockout</a>
-	            <a href="GenshinImpact.php">Genshin Impact</a>
+	      <a href="GenshinImpact.php">Genshin Impact</a>
             </nav>
           </section>
 
@@ -94,16 +94,10 @@
 	ini_set("display_errors", "on");
 	#Start session
 	session_start();
-
-	#session time
-	#$_SESSION["time"] = time();
-
-	$_SESSION["clicked"] = false;
-
-        #If session variable time is not created, create session time variable
-          if(isset($_POST["button01"])){
-	    $_SESSION["expireTime"] = 120;
-	    #echo("session CREATED ");
+	
+	if(isset($_POST["button01"])){
+	    $_SESSION["clicked2"] = false;
+	    echo("<script>alert('Game piece obtained')</script>");
           }
 
 	//Check for session time out
@@ -117,35 +111,31 @@
 			header("Location: ../index.php");
 		}
 	}
-	#Session time
 	$_SESSION["time"] = time();
+	//echo "time past ".$timePast;
+	//echo " expire time ".$_SESSION["expireTime"];
          ?>
 
         <article>
-          <h1>2009: Minecraft</h1>
-    <p>
-            Minecraft, created by by Markus Persson and released on November 18, 2011,
-	    is a sandbox/survival game that achieved widespread and sustained popularity
-	    since its 2009 beta release. The 3D survival/sandbox game is based around the simple
-	    game mechanic of breaking blocks (known as "mining") and placing blocks to create things.
-	    The infinitely generated worlds and lack of a strong story line have allowed players
-	    to create their own stories and play the game in a number of ways.
+          <h1>2010: Limbo</h1>
+          <p>
+            Limbo is a puzzle platformer that was created by an independent Danish studio, Playdead. 
+	    Microsoft Game studios helped publish the game and released it on July 21, 2010. 
+	    The player takes on the role of a boy who awakens in a dark eerie forest. The player must 
+	    then explore the world and solve environment puzzles to move on all while avoiding creatures like 
+	    spiders and bear traps. Not much is known about the boy's backstory or his environment 
+	    which seems to be left to the player to fill in the gaps. Although there was a minimal amount of story, 
+	    it helped to set the theme of the dark, eerie, and unknown world of Limbo.
 	  </p>
-    <p>
-            From large-scale intricate builds and replicas of entire cities, to engineering
-	    computers and other complex circuitry with the game's "redstone" wiring mechanics,
-	    to multiplayer servers and lets play series on YouTube and Twitch, the game has spurred
-	    numerous diverse community followings online. That, and with numerous expansions since its
-	    release, players have been met with tons of new content to explore and interact with over
-	    the years. In 2014, this indie game was purchased by Microsoft for $2.5 billion dollars,
-	    another testament to how successful the game was in its first six years from beta playtesting onwards.
-	    Since this purchase, the game has continued development as a non-indie game,
-	    and its fanbase continues to hold a large online following. Despite being roughly a decade old,
-	    Minecraft's ability to deliver a brand new experience each time a player picks up the game makes it
-	    arguably timeless.
+          <p>
+            The game was highly regarded for its unique dark aesthetics of a greyscale pallete with minimal sounds. 
+	    Another aspect that suprised many about the game was that it was priced high for its short gameplay, 
+	    but it was understood that the game presented itself as a "quality over quantity" experience that made up for it. 
+	    Due to its unique look, puzzle difficulty and short story, Limbo has been highly regarded as it proved a minimalistic game 
+	    can make an impact on players even in a short amount of time and was considered to be one of the best games of all time.       
 	  </p>
-	<?php
-	   if(!isset($_SESSION["expireTime"])){
+	  <?php
+	   if(!isset($_SESSION["clicked2"])){
              print <<<BUTTON
 		<form method="post">
                	   <input type="submit" name = "button01" class ="btn" value="Collect Gaming History Piece"/>

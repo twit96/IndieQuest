@@ -49,7 +49,7 @@
               <a class="active" href="index.php">Minecraft</a>
               <a href="Limbo.php">Limbo</a>
               <a href="Amnesia.php">Amnesia: The Dark Descent</a>
-	            <a href="BindingOfIsaac.php">The Binding of Isaac</a>
+	      <a href="BindingOfIsaac.php">The Binding of Isaac</a>
             </nav>
           </section>
 
@@ -59,7 +59,7 @@
               <a href="Evoland.php">Evoland</a>
               <a href="FlappyBird.php">Flappy Bird</a>
               <a href="GoatSimulator.php">Goat Simulator</a>
-	            <a href="FNAF.php">Five Night's At Freddy's</a>
+	      <a href="FNAF.php">Five Night's At Freddy's</a>
             </nav>
           </section>
 
@@ -68,8 +68,8 @@
             <nav>
               <a href="Undertale.php">Undertale</a>
               <a href="RocketLeague.php">Rocket League</a>
-	            <a href="Cuphead.php">Cuphead</a>
-	            <a href="GettingOverIt.php">Getting Over It</a>
+	      <a href="Cuphead.php">Cuphead</a>
+	      <a href="GettingOverIt.php">Getting Over It</a>
             </nav>
           </section>
 
@@ -78,7 +78,7 @@
             <nav>
               <a href="AmongUs.php">Among Us</a>
               <a href="FallGuys.php">Fall Guys: Ultimate Knockout</a>
-	            <a href="GenshinImpact.php">Genshin Impact</a>
+	      <a href="GenshinImpact.php">Genshin Impact</a>
             </nav>
           </section>
 
@@ -94,16 +94,10 @@
 	ini_set("display_errors", "on");
 	#Start session
 	session_start();
-
-	#session time
-	#$_SESSION["time"] = time();
-
-	$_SESSION["clicked"] = false;
-
-        #If session variable time is not created, create session time variable
-          if(isset($_POST["button01"])){
-	    $_SESSION["expireTime"] = 120;
-	    #echo("session CREATED ");
+	
+	if(isset($_POST["button01"])){
+	    $_SESSION["clicked12"] = false;
+	    echo("<script>alert('Game piece obtained')</script>");
           }
 
 	//Check for session time out
@@ -113,39 +107,30 @@
 		if($timePast >= $_SESSION["expireTime"]){
 			session_unset();
 			session_destroy();
-			#echo($timePast."SESSION DONE");
+			echo($timePast."SESSION DONE");
 			header("Location: ../index.php");
 		}
 	}
-	#Session time
 	$_SESSION["time"] = time();
+	//echo "time past ".$timePast;
+	//echo " expire time ".$_SESSION["expireTime"];
          ?>
 
         <article>
-          <h1>2009: Minecraft</h1>
-    <p>
-            Minecraft, created by by Markus Persson and released on November 18, 2011,
-	    is a sandbox/survival game that achieved widespread and sustained popularity
-	    since its 2009 beta release. The 3D survival/sandbox game is based around the simple
-	    game mechanic of breaking blocks (known as "mining") and placing blocks to create things.
-	    The infinitely generated worlds and lack of a strong story line have allowed players
-	    to create their own stories and play the game in a number of ways.
+          <h1>2017: Getting Over It</h1>
+          <p>
+            Getting Over It revolves around a man by the name of Diogenes - who, somewhat true to his namesake, 
+	    resides in a large metal cauldron - and wields a Yosemite hammer, which he can use to grip objects and move himself. 
+	    Using the mouse or trackpad (controllers are supported but make the game harder because of the lack of precision in the joysticks), 
+	    the player tries to move the man's upper body and sledge hammer in order to climb a steep mountain. The game is accompanied by voice-over 
+	    commentary by Bennett Foddy discussing various philosophical topics. The commentary also provides quotations relating to disappointment 
+	    and perseverance when significant progress is lost by the player. The game increases in difficulty as the player progress up the mountain. 
+	    There are no checkpoints; the player is at a constant risk of losing some or all of their progress. The game concludes when a player reaches 
+	    the highest point of the map and then enters space. Upon reaching the conclusion, a message asks players if they are recording the gameplay. 
+	    When a player indicates they are not, the game provides access to a chatroom populated by other players who have completed the game.	  
 	  </p>
-    <p>
-            From large-scale intricate builds and replicas of entire cities, to engineering
-	    computers and other complex circuitry with the game's "redstone" wiring mechanics,
-	    to multiplayer servers and lets play series on YouTube and Twitch, the game has spurred
-	    numerous diverse community followings online. That, and with numerous expansions since its
-	    release, players have been met with tons of new content to explore and interact with over
-	    the years. In 2014, this indie game was purchased by Microsoft for $2.5 billion dollars,
-	    another testament to how successful the game was in its first six years from beta playtesting onwards.
-	    Since this purchase, the game has continued development as a non-indie game,
-	    and its fanbase continues to hold a large online following. Despite being roughly a decade old,
-	    Minecraft's ability to deliver a brand new experience each time a player picks up the game makes it
-	    arguably timeless.
-	  </p>
-	<?php
-	   if(!isset($_SESSION["expireTime"])){
+	  <?php
+	   if(!isset($_SESSION["clicked12"])){
              print <<<BUTTON
 		<form method="post">
                	   <input type="submit" name = "button01" class ="btn" value="Collect Gaming History Piece"/>

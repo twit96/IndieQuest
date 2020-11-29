@@ -49,7 +49,7 @@
               <a class="active" href="index.php">Minecraft</a>
               <a href="Limbo.php">Limbo</a>
               <a href="Amnesia.php">Amnesia: The Dark Descent</a>
-	            <a href="BindingOfIsaac.php">The Binding of Isaac</a>
+	      <a href="BindingOfIsaac.php">The Binding of Isaac</a>
             </nav>
           </section>
 
@@ -59,7 +59,7 @@
               <a href="Evoland.php">Evoland</a>
               <a href="FlappyBird.php">Flappy Bird</a>
               <a href="GoatSimulator.php">Goat Simulator</a>
-	            <a href="FNAF.php">Five Night's At Freddy's</a>
+	      <a href="FNAF.php">Five Night's At Freddy's</a>
             </nav>
           </section>
 
@@ -68,8 +68,8 @@
             <nav>
               <a href="Undertale.php">Undertale</a>
               <a href="RocketLeague.php">Rocket League</a>
-	            <a href="Cuphead.php">Cuphead</a>
-	            <a href="GettingOverIt.php">Getting Over It</a>
+	      <a href="Cuphead.php">Cuphead</a>
+	      <a href="GettingOverIt.php">Getting Over It</a>
             </nav>
           </section>
 
@@ -78,7 +78,7 @@
             <nav>
               <a href="AmongUs.php">Among Us</a>
               <a href="FallGuys.php">Fall Guys: Ultimate Knockout</a>
-	            <a href="GenshinImpact.php">Genshin Impact</a>
+	      <a href="GenshinImpact.php">Genshin Impact</a>
             </nav>
           </section>
 
@@ -94,16 +94,10 @@
 	ini_set("display_errors", "on");
 	#Start session
 	session_start();
-
-	#session time
-	#$_SESSION["time"] = time();
-
-	$_SESSION["clicked"] = false;
-
-        #If session variable time is not created, create session time variable
-          if(isset($_POST["button01"])){
-	    $_SESSION["expireTime"] = 120;
-	    #echo("session CREATED ");
+	
+	if(isset($_POST["button01"])){
+	    $_SESSION["clicked15"] = false;
+	    echo("<script>alert('Game piece obtained')</script>");
           }
 
 	//Check for session time out
@@ -113,39 +107,40 @@
 		if($timePast >= $_SESSION["expireTime"]){
 			session_unset();
 			session_destroy();
-			#echo($timePast."SESSION DONE");
+			echo($timePast."SESSION DONE");
 			header("Location: ../index.php");
 		}
 	}
-	#Session time
 	$_SESSION["time"] = time();
+	//echo "time past ".$timePast;
+	//echo " expire time ".$_SESSION["expireTime"];
          ?>
 
         <article>
-          <h1>2009: Minecraft</h1>
-    <p>
-            Minecraft, created by by Markus Persson and released on November 18, 2011,
-	    is a sandbox/survival game that achieved widespread and sustained popularity
-	    since its 2009 beta release. The 3D survival/sandbox game is based around the simple
-	    game mechanic of breaking blocks (known as "mining") and placing blocks to create things.
-	    The infinitely generated worlds and lack of a strong story line have allowed players
-	    to create their own stories and play the game in a number of ways.
+          <h1>2020: Genshin Impact</h1>
+          <p>
+            Genshin Impact is an open world action role-playing game that allows the player to control one of four interchangeable characters in a party. 
+	    Switching between characters can be done quickly and during combat to the player to use several different combinations of skills and attacks. 
+	    Characters may have their strengths enhanced in various ways, such as increasing a character's level and improving artifacts and the weapons that the character equips. 
+	    In addition to exploration, the player can attempt various challenges for rewards. Scattered across Teyvat are highly powerful challenges that reward highly valuable resources, 
+	    but claiming them uses up a currency called resin, which slowly regenerates over time. Completing these challenges grants the player progress towards increasing their Adventure Rank, 
+	    which in turn unlocks new quests, challenges, and raises the World Level. The World Level is a measure of how strong the enemies within the world are and the rarity of rewards that 
+	    defeating them gives. By completing quests to advance the story, the player can unlock three additional playable characters, and other characters can be obtained via a gacha mechanic. 
+	    Several premium in-game currencies, obtainable through in-app purchases and playing the game, can be used to obtain characters and weapons through the gacha system. 	  
 	  </p>
-    <p>
-            From large-scale intricate builds and replicas of entire cities, to engineering
-	    computers and other complex circuitry with the game's "redstone" wiring mechanics,
-	    to multiplayer servers and lets play series on YouTube and Twitch, the game has spurred
-	    numerous diverse community followings online. That, and with numerous expansions since its
-	    release, players have been met with tons of new content to explore and interact with over
-	    the years. In 2014, this indie game was purchased by Microsoft for $2.5 billion dollars,
-	    another testament to how successful the game was in its first six years from beta playtesting onwards.
-	    Since this purchase, the game has continued development as a non-indie game,
-	    and its fanbase continues to hold a large online following. Despite being roughly a decade old,
-	    Minecraft's ability to deliver a brand new experience each time a player picks up the game makes it
-	    arguably timeless.
-	  </p>
-	<?php
-	   if(!isset($_SESSION["expireTime"])){
+          <p>
+            Genshin Impact received "generally favorable reviews" according to review aggregator Metacritic. The open world of Teyvat drew praise; IGN's Travis Northup described Teyvat as "a world 
+	    that is absolutely bursting at the seams with possibilities." Game Informer describes the game as an incredible experience, noting that "the gameplay loop of collection, upgrading, and 
+	    customization is captivating and compelling", Destructoid's Chris Carter called the combat system "one of the most interesting things about Genshin Impact". The game's similarities to 
+	    The Legend of Zelda: Breath of the Wild sparked controversy at 2019's ChinaJoy convention among some fans of Breath of the Wild.[60] In contrast, The Washington Post wrote that the game 
+	    wore its inspiration from Breath of the Wild "proudly". Most of the criticisms about Genshin Impact come from the endgame aspects of the game, particularly the resin system. Paul Tassi 
+	    of Forbes noted that to progress past a certain point one must "spend an absurd amount of money to get around the last few timegates of the game." While the resin system might be new to 
+	    PC gamers, this game was originally designed as a Mobile Game. In most mobile games the average time spent in a Gacha Game is around 2 hours a day. On the contrary, PC Players love to dedicate 
+	    between 6-8 hours in a story based game. The Daily Quests and Material Respawns in Genshin allow for players to "Grind" every day for around a minimum of an hour of gameplay which fits perfectly 
+	    into the model of Mobile Games.  
+	   </p>
+	  <?php
+	   if(!isset($_SESSION["clicked15"])){
              print <<<BUTTON
 		<form method="post">
                	   <input type="submit" name = "button01" class ="btn" value="Collect Gaming History Piece"/>

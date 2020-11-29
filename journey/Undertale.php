@@ -49,7 +49,7 @@
               <a class="active" href="index.php">Minecraft</a>
               <a href="Limbo.php">Limbo</a>
               <a href="Amnesia.php">Amnesia: The Dark Descent</a>
-	            <a href="BindingOfIsaac.php">The Binding of Isaac</a>
+	      <a href="BindingOfIsaac.php">The Binding of Isaac</a>
             </nav>
           </section>
 
@@ -59,7 +59,7 @@
               <a href="Evoland.php">Evoland</a>
               <a href="FlappyBird.php">Flappy Bird</a>
               <a href="GoatSimulator.php">Goat Simulator</a>
-	            <a href="FNAF.php">Five Night's At Freddy's</a>
+	      <a href="FNAF.php">Five Night's At Freddy's</a>
             </nav>
           </section>
 
@@ -68,8 +68,8 @@
             <nav>
               <a href="Undertale.php">Undertale</a>
               <a href="RocketLeague.php">Rocket League</a>
-	            <a href="Cuphead.php">Cuphead</a>
-	            <a href="GettingOverIt.php">Getting Over It</a>
+	      <a href="Cuphead.php">Cuphead</a>
+	      <a href="GettingOverIt.php">Getting Over It</a>
             </nav>
           </section>
 
@@ -78,7 +78,7 @@
             <nav>
               <a href="AmongUs.php">Among Us</a>
               <a href="FallGuys.php">Fall Guys: Ultimate Knockout</a>
-	            <a href="GenshinImpact.php">Genshin Impact</a>
+	      <a href="GenshinImpact.php">Genshin Impact</a>
             </nav>
           </section>
 
@@ -94,16 +94,10 @@
 	ini_set("display_errors", "on");
 	#Start session
 	session_start();
-
-	#session time
-	#$_SESSION["time"] = time();
-
-	$_SESSION["clicked"] = false;
-
-        #If session variable time is not created, create session time variable
-          if(isset($_POST["button01"])){
-	    $_SESSION["expireTime"] = 120;
-	    #echo("session CREATED ");
+	
+	if(isset($_POST["button01"])){
+	    $_SESSION["clicked9"] = false;
+	    echo("<script>alert('Game piece obtained')</script>");
           }
 
 	//Check for session time out
@@ -113,39 +107,35 @@
 		if($timePast >= $_SESSION["expireTime"]){
 			session_unset();
 			session_destroy();
-			#echo($timePast."SESSION DONE");
+			echo($timePast."SESSION DONE");
 			header("Location: ../index.php");
 		}
 	}
-	#Session time
 	$_SESSION["time"] = time();
+	//echo "time past ".$timePast;
+	//echo " expire time ".$_SESSION["expireTime"];
          ?>
 
         <article>
-          <h1>2009: Minecraft</h1>
-    <p>
-            Minecraft, created by by Markus Persson and released on November 18, 2011,
-	    is a sandbox/survival game that achieved widespread and sustained popularity
-	    since its 2009 beta release. The 3D survival/sandbox game is based around the simple
-	    game mechanic of breaking blocks (known as "mining") and placing blocks to create things.
-	    The infinitely generated worlds and lack of a strong story line have allowed players
-	    to create their own stories and play the game in a number of ways.
+          <h1>2015: Undertale</h1>
+          <p>
+            Undertale is a role playing, puzzle game that was created by Toby Fox and released on the PC on September 15, 2015. 
+	    The game starts off with the backstory of a battle between human and monsters that ends in the monsters being banished to the underground. 
+	    The player takes on the role of a human child, named Frisk, who accidentally falls down a hole at the top of a mountain called Mount Ebott. 
+	    The player then wakes up in the underground world. The main goal of the game is to solve puzzles and choose how to act with the different 
+	    monsters that they meet along the way. The outcome is determined on how the player plays the game. There is the "pacifist" run where the player befriends 
+	    the monsters of the underworld and the "genocide" run where the player plays the game like any other rpg and fights all the monsters.	  
 	  </p>
-    <p>
-            From large-scale intricate builds and replicas of entire cities, to engineering
-	    computers and other complex circuitry with the game's "redstone" wiring mechanics,
-	    to multiplayer servers and lets play series on YouTube and Twitch, the game has spurred
-	    numerous diverse community followings online. That, and with numerous expansions since its
-	    release, players have been met with tons of new content to explore and interact with over
-	    the years. In 2014, this indie game was purchased by Microsoft for $2.5 billion dollars,
-	    another testament to how successful the game was in its first six years from beta playtesting onwards.
-	    Since this purchase, the game has continued development as a non-indie game,
-	    and its fanbase continues to hold a large online following. Despite being roughly a decade old,
-	    Minecraft's ability to deliver a brand new experience each time a player picks up the game makes it
-	    arguably timeless.
-	  </p>
-	<?php
-	   if(!isset($_SESSION["expireTime"])){
+          <p>
+            The unique part of the game is that based on the route the player chooses to take, there are different endings or outcomes along the way. 
+	    The game has a very retro and bright colored aesthetic that pays tribute to older retro games such as Earthbound and Super Mario Bros.. 
+	    The music also plays into the retro feel as it is mostly 8bit synth sounding with a mixture of orchestra music. Undertale was important, 
+	    for the time, as it brought back appreciation and love for older looking, pixel art games. With its unique fighting system, being able to befriend the monsters 
+	    instead of fighting, it made the game stand out amoung others in the rpg genre. It proved that a game with simple graphics and a well thought story, it can be successful 
+	    and make an impact on the gaming community. 	  
+	   </p>
+	  <?php
+	   if(!isset($_SESSION["clicked9"])){
              print <<<BUTTON
 		<form method="post">
                	   <input type="submit" name = "button01" class ="btn" value="Collect Gaming History Piece"/>
