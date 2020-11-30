@@ -81,7 +81,7 @@ function buildResultString($mysqli, $username, $password) {
       if ($pass_in_db == 1) {
         // login successful
         $display_string .= '<script>alert("Login Successful.");</script>';
-        setcookie('username', $username, time()+15, '/');
+        setcookie('username', $username, time()+604800, '/');
 
       } else {
         // password incorrect
@@ -92,7 +92,7 @@ function buildResultString($mysqli, $username, $password) {
       // username not in database
       doInsert($mysqli, $username, $password);
       $display_string .= '<script>alert("Account Created.");</script>';
-      setcookie('username', $username, time()+15, '/');
+      setcookie('username', $username, time()+604800, '/');
     }
   }
 
