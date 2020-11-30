@@ -36,11 +36,11 @@ USER;
         <form id="login" method="POST">
             <p>
               Username:
-              <input name="username" type="text" size="10" placeholder="Enter Text Here" required />
+              <input name="username" type="text" size="20" placeholder="Enter Username Here" required />
             </p>
             <p>
               Password:
-              <input name="password" type="text" size="10" placeholder="Enter Text Here" required />
+              <input name="password" type="password" size="20" placeholder="Enter Password Here" required />
             </p>
 
           <p class="buttons">
