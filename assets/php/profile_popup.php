@@ -30,7 +30,7 @@ USER;
     echo <<<GUEST
       <h1>Sign Up / Login</h1>
       <p>
-        Create an account to start your quest or login to continue your journey!
+        Create an account to begin the quest or login to continue your journey!
       </p>
       <section>
         <form id="login" method="POST">

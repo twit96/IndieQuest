@@ -108,7 +108,7 @@ USER;
               echo "<h1>Hello Stranger!</h1>";
               $guest_text = <<<GUEST
               <p>
-                Create an account to start your quest or login to continue your journey!
+                Create an account to begin the quest or login to continue your journey!
               </p>
               <form method="POST">
                 <p class="buttons">
