@@ -67,7 +67,7 @@ function logOut() {
   setcookie('username', '', time()-3600, '/');
   unset($_COOKIE['username']);
   // Refresh Page and Die
-  header('Location: '.$_SERVER['PHP_SELF']);
+  header('Location: ./');
   die;
 }
 
@@ -84,7 +84,7 @@ function checkPostVariables() {
     if (($_POST['username'] != '') && ($_POST['password'] != '')) {
       // post variables are nonempty
 
-      // check login - handle cases of homepage path vs not homepage path 
+      // check login - handle cases of homepage path vs not homepage path
       $url_path = $_SERVER['REQUEST_URI'];
       $pieces = explode('/', $url_path);
       $piece = $pieces[4];
@@ -96,7 +96,7 @@ function checkPostVariables() {
         // journey or contact page ($piece == journey || contact)
         include '../assets/php/check_login.php';
       }
-      
+
     } else {
       // post variables are empty. something went wrong. unset them.
       unset($_POST['username']);
