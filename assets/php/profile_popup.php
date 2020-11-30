@@ -64,8 +64,15 @@ BOTTOM;
 * No return value.
 */
 function logOut() {
-  setcookie('username', '', time()-3600, '/');
-  unset($_COOKIE['username']);
+  $cookies = explode(';', $_SERVER['HTTP_COOKIE']);
+  foreach($cookies as $cookie) {
+    $parts = explode('=', $cookie);
+    $name = trim($parts[0]);
+  	setcookie($name, '', time()-1000, '/');
+  	unset($_COOKIE[$name]);
+  	//echo $name." ";
+  }
+
   // Refresh Page and Die
   header('Location: ./');
   die;

@@ -49,26 +49,68 @@ function checkPass($mysqli, $username, $password) {
 
 
 /**
-* Function to insert a new username/password entry
-* into the iq_passwords database.
+* Function to insert a new username/password entry into the iq_passwords database,
+* and a new username/journey entry into the iq_journeys database.
 * No return value.
 */
 function doInsert($mysqli, $username, $password) {
-  $command = 'INSERT INTO iq_passwords VALUES ("' . $username . '", "' . $password . '");';
-  $result = $mysqli->query($command);
-  if (!$result) { die("Query failed: ($mysqli->error <br>"); }
+  $command1 = 'INSERT INTO iq_passwords VALUES ("' . $username . '", "' . $password . '");';
+  $result1 = $mysqli->query($command1);
+  if (!$result1) { die("Query failed: ($mysqli->error <br>"); }
+
+  $command2 = 'INSERT INTO iq_journeys VALUES ("' . $username . '",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);';
+  $result2 = $mysqli->query($command2);
+  if (!$result2) { die("Query failed: ($mysqli->error <br>"); }
 }
 
 
 /**
-* Function to build a return string to be displayed
+* Function to set initial cookies for all articles
+* based on username's journey database values.
+* No return value.
+*/
+function setInitialCookies($mysqli, $username) {
+  // get user's journey information
+  $command = 'SELECT * FROM iq_journeys WHERE username="'.$username.'";';
+  $result = $mysqli->query($command);
+  if (!$result) { die("Query failed: ($mysqli->error <br>"); }
+
+  // set each article cookie from query results
+  $row = $result->fetch_row();
+  $articles = array(
+	  "amnesia",
+	  "amongus",
+	  "bindingofisaac",
+	  "cuphead",
+	  "evoland",
+	  "fallguys",
+	  "flappybird",
+	  "fnaf",
+	  "genshinimpact",
+	  "gettingoverit",
+	  "goatsimulator",
+	  "minecraft",
+	  "limbo",
+	  "rocketleague",
+	  "undertale"
+  );
+
+  $i = 0;
+  foreach ($row as &$value) {
+    $this_article = $articles[$i];
+    setcookie($this_article, $value, time()+604800, '/');
+    $i++;
+  }
+}
+
+
+/**
+* Function to handle the login functionality
 * based off of the given username and password.
 * String indicates successful login, incorrect password, or account created.
 * Returns this string.
 */
-function buildResultString($mysqli, $username, $password) {
-  // Build String
-  $display_string = '';
+function checkLogin($mysqli, $username, $password) {
 
   if (!$username == '' && !$password == '') {
     // username and password have values
@@ -80,23 +122,20 @@ function buildResultString($mysqli, $username, $password) {
 
       if ($pass_in_db == 1) {
         // login successful
-        $display_string .= '<script>alert("Login Successful.");</script>';
-        setcookie('username', $username, time()+604800, '/');
+	setcookie('username', $username, time()+604800, '/');
+        setInitialCookies($mysqli, $username);
 
       } else {
         // password incorrect
-        $display_string .= '<script>alert("Incorrect Password.");</script>';
       }
 
     } else {
       // username not in database
       doInsert($mysqli, $username, $password);
-      $display_string .= '<script>alert("Account Created.");</script>';
       setcookie('username', $username, time()+604800, '/');
+      setInitialCookies($mysqli, $username);
     }
   }
-
-  return $display_string;
 }
 
 
@@ -105,7 +144,7 @@ function buildResultString($mysqli, $username, $password) {
 * Checks database connection, pulls and handles username and password inputs,
 * and echoes return string
 */
-function checkLogin() {
+function doEngine() {
 
   $server = "fall-2020.cs.utexas.edu";
   $user   = "cs329e_bulko_wittig";
@@ -136,9 +175,8 @@ function checkLogin() {
   $username = $mysqli->real_escape_string($username);
   $password = $mysqli->real_escape_string($password);
 
-  // Build Return String
-  $display_string = buildResultString($mysqli, $username, $password);
-  echo $display_string;
+  // Check Login
+  checkLogin($mysqli, $username, $password);
 
   // Refresh Page and Die
   header('Location: ./');
@@ -149,7 +187,7 @@ function checkLogin() {
 /**
 * Initial function call to execute script.
 */
-checkLogin();
+doEngine();
 
 
 ?>
