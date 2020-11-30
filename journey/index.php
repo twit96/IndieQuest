@@ -114,7 +114,7 @@
 			session_unset();
 			session_destroy();
 			#echo($timePast."SESSION DONE");
-			header("Location: ../index.php");
+			header("Location: ../");
 		}
 	}
 	#Session time

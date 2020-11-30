@@ -122,8 +122,6 @@ function checkLogin() {
 
   if ($mysqli->connect_errno) {
     die('Connect Error: ' . $mysqli->connect_errno . ": " . $mysqli->connect_error);
-  } else {
-    echo '<script>console.log("connection established");</script>';
   }
 
   // Select Database
