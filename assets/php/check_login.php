@@ -141,7 +141,7 @@ function checkLogin() {
   echo $display_string;
 
   // Refresh Page and Die
-  header('Location: '.$_SERVER['PHP_SELF']);
+  header('Location: ./');
   die;
 }
 
