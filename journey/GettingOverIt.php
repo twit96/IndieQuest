@@ -7,8 +7,8 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/main.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="../assets/js/header_state.js" defer></script>
-    <script src="../assets/js/profile_popup.js" defer></script>
+    <script src="../assets/js/header_state.js" defer></script>
+    <script src="../assets/js/page_config.js" defer></script>
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Artifika" />
   </head>
 
@@ -29,7 +29,7 @@
         <ul id="top-nav">
           <li><a id="journey-link" href="../journey/">The Journey</a></li>
           <li><a id="contact-link" href="../contact/">Contact</a></li>
-          <li id="profile-icon"><img id="profile-link" src="../assets/img/profile.svg" onclick="openForm()" /></li>
+          <li id="profile-icon"><img id="profile-link" src="../assets/img/profile.svg" onclick="toggleForm()" /></li>
         </ul>
       </div>
     </header>
@@ -156,12 +156,8 @@ BUTTON;
 
     </div>
 
-    <footer>
-      <div class="wrapper">
-        <span>2020/11/11</span>
-        <span>Alexia Carmona, Cooper Fryar, Tyler Wittig</span>
-      </div>
-    </footer>
+    <!-- Footer loaded from components folder in page_config.js -->
+    <footer></footer>
 
   </body>
 </html>

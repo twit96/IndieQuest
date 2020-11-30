@@ -12,7 +12,7 @@ function buildPopup() {
   echo <<<TOP
   <div class="popup-bg">
     <article id="profile">
-      <input class="btn x r-float" type="button" onclick="closeForm()" value="X">
+      <input class="btn x r-float" type="button" onclick="toggleForm()" value="X">
 TOP;
   // user logged in popup html contents
   if (isset($_COOKIE['username'])) {
