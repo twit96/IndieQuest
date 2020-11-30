@@ -107,9 +107,12 @@ USER;
             } else {
               echo "<h1>Hello Stranger!</h1>";
               $guest_text = <<<GUEST
+              <p>
+                Create an account to start your quest or login to continue your journey!
+              </p>
               <form method="POST">
                 <p class="buttons">
-                  <input class="btn" type="button" onclick="toggleForm()" value="Login">
+                  <input class="btn" type="button" onclick="toggleForm()" value="Login | Signup">
                 </p>
               </form>
 GUEST;

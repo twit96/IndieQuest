@@ -30,7 +30,7 @@ USER;
     echo <<<GUEST
       <h1>Sign Up / Login</h1>
       <p>
-        Create an account to start your quest!
+        Create an account to start your quest or login to continue your journey!
       </p>
       <section>
         <form id="login" method="POST">
@@ -44,7 +44,7 @@ USER;
             </p>
 
           <p class="buttons">
-            <input class="btn" id="submit" type="submit" value="Login">
+            <input class="btn" id="submit" type="submit" value="Submit">
             <input class="btn" type="reset" value="Clear">
           </p>
         </form>
