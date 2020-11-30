@@ -46,7 +46,7 @@
           <section>
             <h2>2009-2011</h2>
             <nav>
-              <a class="active" href="index.php">Minecraft</a>
+              <a href="index.php">Minecraft</a>
               <a href="Limbo.php">Limbo</a>
               <a href="Amnesia.php">Amnesia: The Dark Descent</a>
 	      <a href="BindingOfIsaac.php">The Binding of Isaac</a>
@@ -56,7 +56,7 @@
           <section>
             <h2>2013-2014</h2>
             <nav>
-              <a href="Evoland.php">Evoland</a>
+              <a class="active" href="Evoland.php">Evoland</a>
               <a href="FlappyBird.php">Flappy Bird</a>
               <a href="GoatSimulator.php">Goat Simulator</a>
 	      <a href="FNAF.php">Five Night's At Freddy's</a>
@@ -94,7 +94,7 @@
 	ini_set("display_errors", "on");
 	#Start session
 	session_start();
-	
+
 	if(isset($_POST["button01"])){
 	    $_SESSION["clicked5"] = false;
 	    echo("<script>alert('Game piece obtained')</script>");
@@ -119,14 +119,14 @@
         <article>
           <h1>2013: Evoland</h1>
           <p>
-            Evoland, developed by the French indie game development company Shiro Games 
+            Evoland, developed by the French indie game development company Shiro Games
 	    and released on April 4th, 2013 for Windows, is a role-playing action-adventure game
-	    whose game elements become increasingly modern as the storyline progresses. 
+	    whose game elements become increasingly modern as the storyline progresses.
 	    The player begins only with a black and white character with left and right controls,
 	    and unlocks 2-dimensional movement, then colored textures, and so on, so that by the end
 	    of the storyline, the game is played in 3D high-definition.
-	    Although lesser known, Evoland's unique gameplay embraces the different eras of video game 
-	    history, and is a fascinating display of creativity in the indie game community. 	  
+	    Although lesser known, Evoland's unique gameplay embraces the different eras of video game
+	    history, and is a fascinating display of creativity in the indie game community.
 	  </p>
 	  <?php
 	   if(!isset($_SESSION["clicked5"])){

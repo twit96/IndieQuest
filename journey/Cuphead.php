@@ -46,7 +46,7 @@
           <section>
             <h2>2009-2011</h2>
             <nav>
-              <a class="active" href="index.php">Minecraft</a>
+              <a href="index.php">Minecraft</a>
               <a href="Limbo.php">Limbo</a>
               <a href="Amnesia.php">Amnesia: The Dark Descent</a>
 	      <a href="BindingOfIsaac.php">The Binding of Isaac</a>
@@ -68,7 +68,7 @@
             <nav>
               <a href="Undertale.php">Undertale</a>
               <a href="RocketLeague.php">Rocket League</a>
-	      <a href="Cuphead.php">Cuphead</a>
+	      <a class="active" href="Cuphead.php">Cuphead</a>
 	      <a href="GettingOverIt.php">Getting Over It</a>
             </nav>
           </section>
@@ -94,7 +94,7 @@
 	ini_set("display_errors", "on");
 	#Start session
 	session_start();
-	
+
 	if(isset($_POST["button01"])){
 	    $_SESSION["clicked11"] = false;
 	    echo("<script>alert('Game piece obtained')</script>");
@@ -120,23 +120,23 @@
           <h1>2017: Cuphead</h1>
           <p>
             Cuphead, developed and published by the independent game developer StudioMDHR and released
-	    on September 29, 2017, is a run and gun action game in which players repay their debt to 
+	    on September 29, 2017, is a run and gun action game in which players repay their debt to
             the devil by fighting through numerous levels that end in boss fights.
 	    The first important feature of the game is its art style, which is inspired by the rubber
-	    hose animation style of 1930's cartoons, such as those of Walt Disney studios. This gives 
-	    the game an iconic retro feel, which stands out in contrast to other recent games. 
-	    The second important feature of Cuphead is its difficulty. 	  
+	    hose animation style of 1930's cartoons, such as those of Walt Disney studios. This gives
+	    the game an iconic retro feel, which stands out in contrast to other recent games.
+	    The second important feature of Cuphead is its difficulty.
 	  </p>
           <p>
-            The game goes against the standard of wanting everyone to be able to finish in a single try (or two, or 
-	    three), as its levels and especially its boss battles are particularly challenging when 
-	    compared to the average game. This difficulty was met with approval by critics though, as 
+            The game goes against the standard of wanting everyone to be able to finish in a single try (or two, or
+	    three), as its levels and especially its boss battles are particularly challenging when
+	    compared to the average game. This difficulty was met with approval by critics though, as
 	    the levels and bosses are ultimately achievable, but don't lend themselves to an easy win.
 	    Cuphead is particularly important to the history of indie games in that it brought a unique
 	    art style to the table and went against the standard of other similar games of the time.
-	    Its success as an indie game is well earned, and does not indicate the work of only the 
-	    two brothers of StudioMDHR. Furthermore, it has led to the development of an upcoming 
-	    Netflix series titled "The Cuphead Show!", scheduled for release in 2021. 	  
+	    Its success as an indie game is well earned, and does not indicate the work of only the
+	    two brothers of StudioMDHR. Furthermore, it has led to the development of an upcoming
+	    Netflix series titled "The Cuphead Show!", scheduled for release in 2021.
 	   </p>
 	  <?php
 	   if(!isset($_SESSION["clicked11"])){

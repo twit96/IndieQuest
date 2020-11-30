@@ -46,7 +46,7 @@
           <section>
             <h2>2009-2011</h2>
             <nav>
-              <a class="active" href="index.php">Minecraft</a>
+              <a href="index.php">Minecraft</a>
               <a href="Limbo.php">Limbo</a>
               <a href="Amnesia.php">Amnesia: The Dark Descent</a>
 	      <a href="BindingOfIsaac.php">The Binding of Isaac</a>
@@ -66,7 +66,7 @@
           <section>
             <h2>2015-2017</h2>
             <nav>
-              <a href="Undertale.php">Undertale</a>
+              <a class="active" href="Undertale.php">Undertale</a>
               <a href="RocketLeague.php">Rocket League</a>
 	      <a href="Cuphead.php">Cuphead</a>
 	      <a href="GettingOverIt.php">Getting Over It</a>
@@ -94,7 +94,7 @@
 	ini_set("display_errors", "on");
 	#Start session
 	session_start();
-	
+
 	if(isset($_POST["button01"])){
 	    $_SESSION["clicked9"] = false;
 	    echo("<script>alert('Game piece obtained')</script>");
@@ -119,20 +119,20 @@
         <article>
           <h1>2015: Undertale</h1>
           <p>
-            Undertale is a role playing, puzzle game that was created by Toby Fox and released on the PC on September 15, 2015. 
-	    The game starts off with the backstory of a battle between human and monsters that ends in the monsters being banished to the underground. 
-	    The player takes on the role of a human child, named Frisk, who accidentally falls down a hole at the top of a mountain called Mount Ebott. 
-	    The player then wakes up in the underground world. The main goal of the game is to solve puzzles and choose how to act with the different 
-	    monsters that they meet along the way. The outcome is determined on how the player plays the game. There is the "pacifist" run where the player befriends 
-	    the monsters of the underworld and the "genocide" run where the player plays the game like any other rpg and fights all the monsters.	  
+            Undertale is a role playing, puzzle game that was created by Toby Fox and released on the PC on September 15, 2015.
+	    The game starts off with the backstory of a battle between human and monsters that ends in the monsters being banished to the underground.
+	    The player takes on the role of a human child, named Frisk, who accidentally falls down a hole at the top of a mountain called Mount Ebott.
+	    The player then wakes up in the underground world. The main goal of the game is to solve puzzles and choose how to act with the different
+	    monsters that they meet along the way. The outcome is determined on how the player plays the game. There is the "pacifist" run where the player befriends
+	    the monsters of the underworld and the "genocide" run where the player plays the game like any other rpg and fights all the monsters.
 	  </p>
           <p>
-            The unique part of the game is that based on the route the player chooses to take, there are different endings or outcomes along the way. 
-	    The game has a very retro and bright colored aesthetic that pays tribute to older retro games such as Earthbound and Super Mario Bros.. 
-	    The music also plays into the retro feel as it is mostly 8bit synth sounding with a mixture of orchestra music. Undertale was important, 
-	    for the time, as it brought back appreciation and love for older looking, pixel art games. With its unique fighting system, being able to befriend the monsters 
-	    instead of fighting, it made the game stand out amoung others in the rpg genre. It proved that a game with simple graphics and a well thought story, it can be successful 
-	    and make an impact on the gaming community. 	  
+            The unique part of the game is that based on the route the player chooses to take, there are different endings or outcomes along the way.
+	    The game has a very retro and bright colored aesthetic that pays tribute to older retro games such as Earthbound and Super Mario Bros..
+	    The music also plays into the retro feel as it is mostly 8bit synth sounding with a mixture of orchestra music. Undertale was important,
+	    for the time, as it brought back appreciation and love for older looking, pixel art games. With its unique fighting system, being able to befriend the monsters
+	    instead of fighting, it made the game stand out amoung others in the rpg genre. It proved that a game with simple graphics and a well thought story, it can be successful
+	    and make an impact on the gaming community.
 	   </p>
 	  <?php
 	   if(!isset($_SESSION["clicked9"])){

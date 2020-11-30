@@ -46,7 +46,7 @@
           <section>
             <h2>2009-2011</h2>
             <nav>
-              <a class="active" href="index.php">Minecraft</a>
+              <a href="index.php">Minecraft</a>
               <a href="Limbo.php">Limbo</a>
               <a href="Amnesia.php">Amnesia: The Dark Descent</a>
 	      <a href="BindingOfIsaac.php">The Binding of Isaac</a>
@@ -69,7 +69,7 @@
               <a href="Undertale.php">Undertale</a>
               <a href="RocketLeague.php">Rocket League</a>
 	      <a href="Cuphead.php">Cuphead</a>
-	      <a href="GettingOverIt.php">Getting Over It</a>
+	      <a class="active" href="GettingOverIt.php">Getting Over It</a>
             </nav>
           </section>
 
@@ -94,7 +94,7 @@
 	ini_set("display_errors", "on");
 	#Start session
 	session_start();
-	
+
 	if(isset($_POST["button01"])){
 	    $_SESSION["clicked12"] = false;
 	    echo("<script>alert('Game piece obtained')</script>");
@@ -119,15 +119,15 @@
         <article>
           <h1>2017: Getting Over It</h1>
           <p>
-            Getting Over It revolves around a man by the name of Diogenes - who, somewhat true to his namesake, 
-	    resides in a large metal cauldron - and wields a Yosemite hammer, which he can use to grip objects and move himself. 
-	    Using the mouse or trackpad (controllers are supported but make the game harder because of the lack of precision in the joysticks), 
-	    the player tries to move the man's upper body and sledge hammer in order to climb a steep mountain. The game is accompanied by voice-over 
-	    commentary by Bennett Foddy discussing various philosophical topics. The commentary also provides quotations relating to disappointment 
-	    and perseverance when significant progress is lost by the player. The game increases in difficulty as the player progress up the mountain. 
-	    There are no checkpoints; the player is at a constant risk of losing some or all of their progress. The game concludes when a player reaches 
-	    the highest point of the map and then enters space. Upon reaching the conclusion, a message asks players if they are recording the gameplay. 
-	    When a player indicates they are not, the game provides access to a chatroom populated by other players who have completed the game.	  
+            Getting Over It revolves around a man by the name of Diogenes - who, somewhat true to his namesake,
+	    resides in a large metal cauldron - and wields a Yosemite hammer, which he can use to grip objects and move himself.
+	    Using the mouse or trackpad (controllers are supported but make the game harder because of the lack of precision in the joysticks),
+	    the player tries to move the man's upper body and sledge hammer in order to climb a steep mountain. The game is accompanied by voice-over
+	    commentary by Bennett Foddy discussing various philosophical topics. The commentary also provides quotations relating to disappointment
+	    and perseverance when significant progress is lost by the player. The game increases in difficulty as the player progress up the mountain.
+	    There are no checkpoints; the player is at a constant risk of losing some or all of their progress. The game concludes when a player reaches
+	    the highest point of the map and then enters space. Upon reaching the conclusion, a message asks players if they are recording the gameplay.
+	    When a player indicates they are not, the game provides access to a chatroom populated by other players who have completed the game.
 	  </p>
 	  <?php
 	   if(!isset($_SESSION["clicked12"])){

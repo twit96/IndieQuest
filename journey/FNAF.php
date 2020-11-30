@@ -46,7 +46,7 @@
           <section>
             <h2>2009-2011</h2>
             <nav>
-              <a class="active" href="index.php">Minecraft</a>
+              <a href="index.php">Minecraft</a>
               <a href="Limbo.php">Limbo</a>
               <a href="Amnesia.php">Amnesia: The Dark Descent</a>
 	      <a href="BindingOfIsaac.php">The Binding of Isaac</a>
@@ -59,7 +59,7 @@
               <a href="Evoland.php">Evoland</a>
               <a href="FlappyBird.php">Flappy Bird</a>
               <a href="GoatSimulator.php">Goat Simulator</a>
-	      <a href="FNAF.php">Five Night's At Freddy's</a>
+	      <a class="active" href="FNAF.php">Five Night's At Freddy's</a>
             </nav>
           </section>
 
@@ -94,7 +94,7 @@
 	ini_set("display_errors", "on");
 	#Start session
 	session_start();
-	
+
 	if(isset($_POST["button01"])){
 	    $_SESSION["clicked8"] = false;
 	    echo("<script>alert('Game piece obtained')</script>");
@@ -118,18 +118,18 @@
 
         <article>
           <h1>2014: Five Nights at Freddy's</h1>
-          <p>Five Nights at Freddy's is a point and click horror survival game created by Scott Cawthon that was released for Windows on July 23, 2014. 
-	     Mr. Cawthon initially created Christian games that were not as well known, however, one day someone had complained that one of the characters 
-	     from one of his other games thought they looked creepy. The developer then got the idea to create a game that he thought was really frightening 
-	     with sinister animatronics. Five Nights at Freddy's is also based on the pizza franchise craze from the 80s such as Chuck E. Cheese's and ShowBiz Pizza. 
-	     The game starts with the player as a night security guard for Freddy Fazbear's Pizza set in the 80s where they must use the cameras, lights, and doors to 
-	     prevent the animatronics from killing them and stuffing them into an animatronic suit before 6 a.m.. The player cannot move and is set in a security office 
-	     with a computer and limited amount of battery. If the player loses energy, the lights shut off and Freddy jumps at the player. 	  
+          <p>Five Nights at Freddy's is a point and click horror survival game created by Scott Cawthon that was released for Windows on July 23, 2014.
+	     Mr. Cawthon initially created Christian games that were not as well known, however, one day someone had complained that one of the characters
+	     from one of his other games thought they looked creepy. The developer then got the idea to create a game that he thought was really frightening
+	     with sinister animatronics. Five Nights at Freddy's is also based on the pizza franchise craze from the 80s such as Chuck E. Cheese's and ShowBiz Pizza.
+	     The game starts with the player as a night security guard for Freddy Fazbear's Pizza set in the 80s where they must use the cameras, lights, and doors to
+	     prevent the animatronics from killing them and stuffing them into an animatronic suit before 6 a.m.. The player cannot move and is set in a security office
+	     with a computer and limited amount of battery. If the player loses energy, the lights shut off and Freddy jumps at the player.
 	  </p>
           <p>
-            The game heavily utilizes suspense as the player may be suprised to find an animatronic outside their door. The game made a huge impact in the survival horror 
-	    genre as there had not been a game with a concept of a creepy pizza joint. It helped to bring forth future games that use the concept of the player in one room 
-	    and many fan made games based off of the Five Nights at Freddy's franchise.   
+            The game heavily utilizes suspense as the player may be suprised to find an animatronic outside their door. The game made a huge impact in the survival horror
+	    genre as there had not been a game with a concept of a creepy pizza joint. It helped to bring forth future games that use the concept of the player in one room
+	    and many fan made games based off of the Five Nights at Freddy's franchise.
 	  </p>
 	  <?php
 	   if(!isset($_SESSION["clicked8"])){

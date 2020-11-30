@@ -46,7 +46,7 @@
           <section>
             <h2>2009-2011</h2>
             <nav>
-              <a class="active" href="index.php">Minecraft</a>
+              <a href="index.php">Minecraft</a>
               <a href="Limbo.php">Limbo</a>
               <a href="Amnesia.php">Amnesia: The Dark Descent</a>
 	      <a href="BindingOfIsaac.php">The Binding of Isaac</a>
@@ -78,7 +78,7 @@
             <nav>
               <a href="AmongUs.php">Among Us</a>
               <a href="FallGuys.php">Fall Guys: Ultimate Knockout</a>
-	      <a href="GenshinImpact.php">Genshin Impact</a>
+	      <a class="active" href="GenshinImpact.php">Genshin Impact</a>
             </nav>
           </section>
 
@@ -94,7 +94,7 @@
 	ini_set("display_errors", "on");
 	#Start session
 	session_start();
-	
+
 	if(isset($_POST["button01"])){
 	    $_SESSION["clicked15"] = false;
 	    echo("<script>alert('Game piece obtained')</script>");
@@ -119,25 +119,25 @@
         <article>
           <h1>2020: Genshin Impact</h1>
           <p>
-            Genshin Impact is an open world action role-playing game that allows the player to control one of four interchangeable characters in a party. 
-	    Switching between characters can be done quickly and during combat to the player to use several different combinations of skills and attacks. 
-	    Characters may have their strengths enhanced in various ways, such as increasing a character's level and improving artifacts and the weapons that the character equips. 
-	    In addition to exploration, the player can attempt various challenges for rewards. Scattered across Teyvat are highly powerful challenges that reward highly valuable resources, 
-	    but claiming them uses up a currency called resin, which slowly regenerates over time. Completing these challenges grants the player progress towards increasing their Adventure Rank, 
-	    which in turn unlocks new quests, challenges, and raises the World Level. The World Level is a measure of how strong the enemies within the world are and the rarity of rewards that 
-	    defeating them gives. By completing quests to advance the story, the player can unlock three additional playable characters, and other characters can be obtained via a gacha mechanic. 
-	    Several premium in-game currencies, obtainable through in-app purchases and playing the game, can be used to obtain characters and weapons through the gacha system. 	  
+            Genshin Impact is an open world action role-playing game that allows the player to control one of four interchangeable characters in a party.
+	    Switching between characters can be done quickly and during combat to the player to use several different combinations of skills and attacks.
+	    Characters may have their strengths enhanced in various ways, such as increasing a character's level and improving artifacts and the weapons that the character equips.
+	    In addition to exploration, the player can attempt various challenges for rewards. Scattered across Teyvat are highly powerful challenges that reward highly valuable resources,
+	    but claiming them uses up a currency called resin, which slowly regenerates over time. Completing these challenges grants the player progress towards increasing their Adventure Rank,
+	    which in turn unlocks new quests, challenges, and raises the World Level. The World Level is a measure of how strong the enemies within the world are and the rarity of rewards that
+	    defeating them gives. By completing quests to advance the story, the player can unlock three additional playable characters, and other characters can be obtained via a gacha mechanic.
+	    Several premium in-game currencies, obtainable through in-app purchases and playing the game, can be used to obtain characters and weapons through the gacha system.
 	  </p>
           <p>
-            Genshin Impact received "generally favorable reviews" according to review aggregator Metacritic. The open world of Teyvat drew praise; IGN's Travis Northup described Teyvat as "a world 
-	    that is absolutely bursting at the seams with possibilities." Game Informer describes the game as an incredible experience, noting that "the gameplay loop of collection, upgrading, and 
-	    customization is captivating and compelling", Destructoid's Chris Carter called the combat system "one of the most interesting things about Genshin Impact". The game's similarities to 
-	    The Legend of Zelda: Breath of the Wild sparked controversy at 2019's ChinaJoy convention among some fans of Breath of the Wild.[60] In contrast, The Washington Post wrote that the game 
-	    wore its inspiration from Breath of the Wild "proudly". Most of the criticisms about Genshin Impact come from the endgame aspects of the game, particularly the resin system. Paul Tassi 
-	    of Forbes noted that to progress past a certain point one must "spend an absurd amount of money to get around the last few timegates of the game." While the resin system might be new to 
-	    PC gamers, this game was originally designed as a Mobile Game. In most mobile games the average time spent in a Gacha Game is around 2 hours a day. On the contrary, PC Players love to dedicate 
-	    between 6-8 hours in a story based game. The Daily Quests and Material Respawns in Genshin allow for players to "Grind" every day for around a minimum of an hour of gameplay which fits perfectly 
-	    into the model of Mobile Games.  
+            Genshin Impact received "generally favorable reviews" according to review aggregator Metacritic. The open world of Teyvat drew praise; IGN's Travis Northup described Teyvat as "a world
+	    that is absolutely bursting at the seams with possibilities." Game Informer describes the game as an incredible experience, noting that "the gameplay loop of collection, upgrading, and
+	    customization is captivating and compelling", Destructoid's Chris Carter called the combat system "one of the most interesting things about Genshin Impact". The game's similarities to
+	    The Legend of Zelda: Breath of the Wild sparked controversy at 2019's ChinaJoy convention among some fans of Breath of the Wild.[60] In contrast, The Washington Post wrote that the game
+	    wore its inspiration from Breath of the Wild "proudly". Most of the criticisms about Genshin Impact come from the endgame aspects of the game, particularly the resin system. Paul Tassi
+	    of Forbes noted that to progress past a certain point one must "spend an absurd amount of money to get around the last few timegates of the game." While the resin system might be new to
+	    PC gamers, this game was originally designed as a Mobile Game. In most mobile games the average time spent in a Gacha Game is around 2 hours a day. On the contrary, PC Players love to dedicate
+	    between 6-8 hours in a story based game. The Daily Quests and Material Respawns in Genshin allow for players to "Grind" every day for around a minimum of an hour of gameplay which fits perfectly
+	    into the model of Mobile Games.
 	   </p>
 	  <?php
 	   if(!isset($_SESSION["clicked15"])){

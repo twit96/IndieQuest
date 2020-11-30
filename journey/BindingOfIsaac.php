@@ -46,10 +46,10 @@
           <section>
             <h2>2009-2011</h2>
             <nav>
-              <a class="active" href="index.php">Minecraft</a>
+              <a href="index.php">Minecraft</a>
               <a href="Limbo.php">Limbo</a>
               <a href="Amnesia.php">Amnesia: The Dark Descent</a>
-	      <a href="BindingOfIsaac.php">The Binding of Isaac</a>
+	      <a class="active" href="BindingOfIsaac.php">The Binding of Isaac</a>
             </nav>
           </section>
 
@@ -94,7 +94,7 @@
 	ini_set("display_errors", "on");
 	#Start session
 	session_start();
-	
+
 	if(isset($_POST["button01"])){
 	    $_SESSION["clicked4"] = false;
 	    echo("<script>alert('Game piece obtained')</script>");
@@ -119,14 +119,14 @@
         <article>
           <h1>2011: The Binding of Isaac</h1>
           <p>
-            The Binding of Isaac is a roguelike game created by the developers Edmund McMillen and Florian Himsl that was initially released on Windows on September 28, 2011. 
-	    It was created in a week for a game jam that uses randomly generated environments. The game features a top down dungeon crawler aspect where the player takes on the role of Isaac. 
-	    The Binding of Isaac has an allusion to the biblical story of the binding of Isaac as it uses the theme of Isaac's mother proving her devotion to god by obeying his commands to 
-	    the extent of killing her son. Issac jumps down a trap door to the weird underground world. The player must attack, upgrade attacks, and defeat oddly shaped creatures as well as demons.	  
+            The Binding of Isaac is a roguelike game created by the developers Edmund McMillen and Florian Himsl that was initially released on Windows on September 28, 2011.
+	    It was created in a week for a game jam that uses randomly generated environments. The game features a top down dungeon crawler aspect where the player takes on the role of Isaac.
+	    The Binding of Isaac has an allusion to the biblical story of the binding of Isaac as it uses the theme of Isaac's mother proving her devotion to god by obeying his commands to
+	    the extent of killing her son. Issac jumps down a trap door to the weird underground world. The player must attack, upgrade attacks, and defeat oddly shaped creatures as well as demons.
 	  </p>
           <p>
-            The game was highly regarded for its Legend of Zelda type dungeon scroll, its randomized environments, and its replayability. The Binding of Isaac proved that a great game can be created 
-	    in a short amount of time and helped to make dungeon crawlers popular again.   
+            The game was highly regarded for its Legend of Zelda type dungeon scroll, its randomized environments, and its replayability. The Binding of Isaac proved that a great game can be created
+	    in a short amount of time and helped to make dungeon crawlers popular again.
 	  </p>
 	  <?php
 	   if(!isset($_SESSION["clicked4"])){

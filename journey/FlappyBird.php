@@ -46,7 +46,7 @@
           <section>
             <h2>2009-2011</h2>
             <nav>
-              <a class="active" href="index.php">Minecraft</a>
+              <a href="index.php">Minecraft</a>
               <a href="Limbo.php">Limbo</a>
               <a href="Amnesia.php">Amnesia: The Dark Descent</a>
 	      <a href="BindingOfIsaac.php">The Binding of Isaac</a>
@@ -57,7 +57,7 @@
             <h2>2013-2014</h2>
             <nav>
               <a href="Evoland.php">Evoland</a>
-              <a href="FlappyBird.php">Flappy Bird</a>
+              <a class="active" href="FlappyBird.php">Flappy Bird</a>
               <a href="GoatSimulator.php">Goat Simulator</a>
 	      <a href="FNAF.php">Five Night's At Freddy's</a>
             </nav>
@@ -94,7 +94,7 @@
 	ini_set("display_errors", "on");
 	#Start session
 	session_start();
-	
+
 	if(isset($_POST["button01"])){
 	    $_SESSION["clicked6"] = false;
 	    echo("<script>alert('Game piece obtained')</script>");
@@ -119,23 +119,23 @@
         <article>
           <h1>2013: Flappy Bird</h1>
           <p>
-            Flappy Bird, developed by Dong Nguyen and released on May 24, 2013, is a mobile 
+            Flappy Bird, developed by Dong Nguyen and released on May 24, 2013, is a mobile
 	    side-scroller arcade game in which the player tries to fly a bird between columns
-	    of pipes. This short-lived indie game is infamous due to its surge in popularity 
-	    in 2014, after which it received criticism for supposed plagiarism and its notorious 
-	    difficulty, and was abruptly removed from the Google Play Store and the Apple App Store on 
-	    February 10, 2014. This resulted in phones still having the game installed on them to sell 
-	    for ridiculous amounts online, and a number of knockoff games being published and 
-	    subsequently removed from the Apple and Google app stores. 	  
+	    of pipes. This short-lived indie game is infamous due to its surge in popularity
+	    in 2014, after which it received criticism for supposed plagiarism and its notorious
+	    difficulty, and was abruptly removed from the Google Play Store and the Apple App Store on
+	    February 10, 2014. This resulted in phones still having the game installed on them to sell
+	    for ridiculous amounts online, and a number of knockoff games being published and
+	    subsequently removed from the Apple and Google app stores.
 	  </p>
           <p>
-            "Flappy Bird's" gameplay is nearly identical to "Helicopter Game", released in 2000 by David 
-	     McCandless, which did not receive the overnight pandemonion and sensationalism of 
-	     "Flappy Bird". A single button (or screen tap) controls the game, and the obstacles are 
-	      infinitely generated. Years later, much like "Helicopter Game", "Flappy Bird" is mostly 
+            "Flappy Bird's" gameplay is nearly identical to "Helicopter Game", released in 2000 by David
+	     McCandless, which did not receive the overnight pandemonion and sensationalism of
+	     "Flappy Bird". A single button (or screen tap) controls the game, and the obstacles are
+	      infinitely generated. Years later, much like "Helicopter Game", "Flappy Bird" is mostly
 	      forgotten, remembered mainly for its rapid and extreme rise in popularity. Nevertheless,
-	      its place as an important, albeit dividing, topic in the history of indie games is 
-	      indisputable.  
+	      its place as an important, albeit dividing, topic in the history of indie games is
+	      indisputable.
 	  </p>
 	  <?php
 	   if(!isset($_SESSION["clicked6"])){

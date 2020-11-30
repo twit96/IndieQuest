@@ -46,9 +46,9 @@
           <section>
             <h2>2009-2011</h2>
             <nav>
-              <a class="active" href="index.php">Minecraft</a>
+              <a href="index.php">Minecraft</a>
               <a href="Limbo.php">Limbo</a>
-              <a href="Amnesia.php">Amnesia: The Dark Descent</a>
+              <a class="active" href="Amnesia.php">Amnesia: The Dark Descent</a>
 	      <a href="BindingOfIsaac.php">The Binding of Isaac</a>
             </nav>
           </section>
@@ -94,7 +94,7 @@
 	ini_set("display_errors", "on");
 	#Start session
 	session_start();
-	
+
 	if(isset($_POST["button01"])){
 	    $_SESSION["clicked3"] = false;
 	    echo("<script>alert('Game piece obtained')</script>");
@@ -119,18 +119,18 @@
         <article>
           <h1>2010: Amnesia: The Dark Descent</h1>
           <p>
-            Anmesia: The Dark Descent is a survival horror adventure game that was created by the developers Frictional Games 
-	    that was released on the PC on September 8, 2010. The player takes on the role of a character named Daniel, who 
-	    has no recollection of his past, that is investigating a castle. While Daniel must avoid monsters and other creepy obstacles, 
-	    the player must also face his troubled memories. The player can interact with the environment but cannot attack. 
-	    The games main mechanic is to hide and collect tinderboxes to sparingly use to see in the dark. The game also heavily depends 
+            Anmesia: The Dark Descent is a survival horror adventure game that was created by the developers Frictional Games
+	    that was released on the PC on September 8, 2010. The player takes on the role of a character named Daniel, who
+	    has no recollection of his past, that is investigating a castle. While Daniel must avoid monsters and other creepy obstacles,
+	    the player must also face his troubled memories. The player can interact with the environment but cannot attack.
+	    The games main mechanic is to hide and collect tinderboxes to sparingly use to see in the dark. The game also heavily depends
 	    on sounds to tell if there is a monster nearby and sight.
 	  </p>
           <p>
-            Amnesia was highly regarded for its frightening theme and use of supsense when hiding from monsters and was considered to be one 
-	    of the most scariest games at the time. The game was also important for the time as, two years later, some of the now well known Youtubers, 
-	    like Pewdiepie and Markiplier, gained attention at the time they played this game and it also was one of the factors that helped make 
-	    Youtube gaming become popular.    
+            Amnesia was highly regarded for its frightening theme and use of supsense when hiding from monsters and was considered to be one
+	    of the most scariest games at the time. The game was also important for the time as, two years later, some of the now well known Youtubers,
+	    like Pewdiepie and Markiplier, gained attention at the time they played this game and it also was one of the factors that helped make
+	    Youtube gaming become popular.
 	  </p>
 	  <?php
 	   if(!isset($_SESSION["clicked3"])){

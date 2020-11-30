@@ -46,8 +46,8 @@
           <section>
             <h2>2009-2011</h2>
             <nav>
-              <a class="active" href="index.php">Minecraft</a>
-              <a href="Limbo.php">Limbo</a>
+              <a href="index.php">Minecraft</a>
+              <a class="active" href="Limbo.php">Limbo</a>
               <a href="Amnesia.php">Amnesia: The Dark Descent</a>
 	      <a href="BindingOfIsaac.php">The Binding of Isaac</a>
             </nav>
@@ -94,7 +94,7 @@
 	ini_set("display_errors", "on");
 	#Start session
 	session_start();
-	
+
 	if(isset($_POST["button01"])){
 	    $_SESSION["clicked2"] = false;
 	    echo("<script>alert('Game piece obtained')</script>");
@@ -119,20 +119,20 @@
         <article>
           <h1>2010: Limbo</h1>
           <p>
-            Limbo is a puzzle platformer that was created by an independent Danish studio, Playdead. 
-	    Microsoft Game studios helped publish the game and released it on July 21, 2010. 
-	    The player takes on the role of a boy who awakens in a dark eerie forest. The player must 
-	    then explore the world and solve environment puzzles to move on all while avoiding creatures like 
-	    spiders and bear traps. Not much is known about the boy's backstory or his environment 
-	    which seems to be left to the player to fill in the gaps. Although there was a minimal amount of story, 
+            Limbo is a puzzle platformer that was created by an independent Danish studio, Playdead.
+	    Microsoft Game studios helped publish the game and released it on July 21, 2010.
+	    The player takes on the role of a boy who awakens in a dark eerie forest. The player must
+	    then explore the world and solve environment puzzles to move on all while avoiding creatures like
+	    spiders and bear traps. Not much is known about the boy's backstory or his environment
+	    which seems to be left to the player to fill in the gaps. Although there was a minimal amount of story,
 	    it helped to set the theme of the dark, eerie, and unknown world of Limbo.
 	  </p>
           <p>
-            The game was highly regarded for its unique dark aesthetics of a greyscale pallete with minimal sounds. 
-	    Another aspect that suprised many about the game was that it was priced high for its short gameplay, 
-	    but it was understood that the game presented itself as a "quality over quantity" experience that made up for it. 
-	    Due to its unique look, puzzle difficulty and short story, Limbo has been highly regarded as it proved a minimalistic game 
-	    can make an impact on players even in a short amount of time and was considered to be one of the best games of all time.       
+            The game was highly regarded for its unique dark aesthetics of a greyscale pallete with minimal sounds.
+	    Another aspect that suprised many about the game was that it was priced high for its short gameplay,
+	    but it was understood that the game presented itself as a "quality over quantity" experience that made up for it.
+	    Due to its unique look, puzzle difficulty and short story, Limbo has been highly regarded as it proved a minimalistic game
+	    can make an impact on players even in a short amount of time and was considered to be one of the best games of all time.
 	  </p>
 	  <?php
 	   if(!isset($_SESSION["clicked2"])){

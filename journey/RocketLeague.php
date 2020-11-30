@@ -46,7 +46,7 @@
           <section>
             <h2>2009-2011</h2>
             <nav>
-              <a class="active" href="index.php">Minecraft</a>
+              <a href="index.php">Minecraft</a>
               <a href="Limbo.php">Limbo</a>
               <a href="Amnesia.php">Amnesia: The Dark Descent</a>
 	      <a href="BindingOfIsaac.php">The Binding of Isaac</a>
@@ -67,7 +67,7 @@
             <h2>2015-2017</h2>
             <nav>
               <a href="Undertale.php">Undertale</a>
-              <a href="RocketLeague.php">Rocket League</a>
+              <a class="active" href="RocketLeague.php">Rocket League</a>
 	      <a href="Cuphead.php">Cuphead</a>
 	      <a href="GettingOverIt.php">Getting Over It</a>
             </nav>
@@ -94,7 +94,7 @@
 	ini_set("display_errors", "on");
 	#Start session
 	session_start();
-	
+
 	if(isset($_POST["button01"])){
 	    $_SESSION["clicked10"] = false;
 	    echo("<script>alert('Game piece obtained')</script>");
@@ -119,10 +119,10 @@
         <article>
           <h1>2015: Rocket League/Supersonic Acrobatic Rocket-Powered Battle-Cars</h1>
           <p>
-           Paragraph 1 here	  
+           Paragraph 1 here
 	  </p>
           <p>
-            paragraph 2 here	  
+            paragraph 2 here
 	   </p>
 	  <?php
 	   if(!isset($_SESSION["clicked10"])){

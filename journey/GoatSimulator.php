@@ -46,7 +46,7 @@
           <section>
             <h2>2009-2011</h2>
             <nav>
-              <a class="active" href="index.php">Minecraft</a>
+              <a href="index.php">Minecraft</a>
               <a href="Limbo.php">Limbo</a>
               <a href="Amnesia.php">Amnesia: The Dark Descent</a>
 	      <a href="BindingOfIsaac.php">The Binding of Isaac</a>
@@ -58,7 +58,7 @@
             <nav>
               <a href="Evoland.php">Evoland</a>
               <a href="FlappyBird.php">Flappy Bird</a>
-              <a href="GoatSimulator.php">Goat Simulator</a>
+              <a class="active" href="GoatSimulator.php">Goat Simulator</a>
 	      <a href="FNAF.php">Five Night's At Freddy's</a>
             </nav>
           </section>
@@ -94,7 +94,7 @@
 	ini_set("display_errors", "on");
 	#Start session
 	session_start();
-	
+
 	if(isset($_POST["button01"])){
 	    $_SESSION["clicked7"] = false;
 	    echo("<script>alert('Game piece obtained')</script>");
@@ -120,17 +120,17 @@
           <h1>2014: Goat Simulator</h1>
           <p>
             Goat Simulator, developed by Swedish game developer Coffee Stain Studios and released
-	    on April 1, 2014, is an action sandbox game in which you play as a goat trying to do as 
+	    on April 1, 2014, is an action sandbox game in which you play as a goat trying to do as
 	    much damage as possible to an open world map. The game was initially created as a joke,
 	    but developed to a stable version after early versions were met with enthusiasm online.
-	    Thus, its simple and often intentionally glitchy mechanics make for a gaming experience in 
-	    which players may find themselves destroying items, dragging people across streets with 
-	    their goat tongue, and numerous other crazy scenarios. One of the 
-	    great aspects of the indie community is the closeness between the developers and the 
-	    players - and "Goat Simulator" demonstrates this relationship well. 
-	    The game's strong suit is its ridiculousness, and the short-lived development of an excited 
-	    community is what ultimately led to its completion from just a joke game into a final 
-	    released product.	  
+	    Thus, its simple and often intentionally glitchy mechanics make for a gaming experience in
+	    which players may find themselves destroying items, dragging people across streets with
+	    their goat tongue, and numerous other crazy scenarios. One of the
+	    great aspects of the indie community is the closeness between the developers and the
+	    players - and "Goat Simulator" demonstrates this relationship well.
+	    The game's strong suit is its ridiculousness, and the short-lived development of an excited
+	    community is what ultimately led to its completion from just a joke game into a final
+	    released product.
 	  </p>
 	  <?php
 	   if(!isset($_SESSION["clicked7"])){
