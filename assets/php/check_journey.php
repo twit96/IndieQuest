@@ -98,7 +98,8 @@ function checkJourney($mysqli, $username, $curr_article) {
     // echo("Button Clicked");
     unset($_POST[$curr_article]);
     doUpdate($mysqli, $username, $curr_article);
-    header("Location: ./");
+    $script = $_SERVER['PHP_SELF'];
+    header("Location: ".$script)
   }
 
 }
