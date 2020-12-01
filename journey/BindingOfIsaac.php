@@ -1,3 +1,9 @@
+<?php
+
+// Session and Collect Gaming History Piece Button
+include ('../assets/php/check_journey.php');
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -89,33 +95,6 @@
       </div>
 
       <div id="center">
-        <?php
-	error_reporting(E_ALL);
-	ini_set("display_errors", "on");
-	#Start session
-	session_start();
-
-	if(isset($_POST["button01"])){
-	    $_SESSION["clicked4"] = false;
-	    echo("<script>alert('Game piece obtained')</script>");
-          }
-
-	//Check for session time out
-	if(isset($_SESSION["time"])){
-		$timePast = time() - $_SESSION["time"];
-
-		if($timePast >= $_SESSION["expireTime"]){
-			session_unset();
-			session_destroy();
-			echo($timePast."SESSION DONE");
-			header("Location: ../");
-		}
-	}
-	$_SESSION["time"] = time();
-	//echo "time past ".$timePast;
-	//echo " expire time ".$_SESSION["expireTime"];
-         ?>
-
         <article>
           <h1>2011: The Binding of Isaac</h1>
           <p>
@@ -128,15 +107,39 @@
             The game was highly regarded for its Legend of Zelda type dungeon scroll, its randomized environments, and its replayability. The Binding of Isaac proved that a great game can be created
 	    in a short amount of time and helped to make dungeon crawlers popular again.
 	  </p>
-	  <?php
-	   if(!isset($_SESSION["clicked4"])){
-             print <<<BUTTON
-		<form method="post">
-               	   <input type="submit" name = "button01" class ="btn" value="Collect Gaming History Piece"/>
-                </form>
+<?php
+
+ $curr_article = getArticleName();
+ // Check if game piece button was clicked
+ if ($_COOKIE[$curr_article] == 0) {
+
+   // FOR DEBUGGING
+   /*
+   print <<<DEBUGGING
+   <p>Curr Article: $curr_article</p>
+   <p>Cookie: $_COOKIE[$curr_article]</p>
+DEBUGGING;
+    */
+
+   print <<<BUTTON
+   <br />
+   <form method="post">
+     <input type="submit" name = "$curr_article" class ="btn" value="Collect Gaming History Piece"/>
+   </form>
 BUTTON;
-	   }
-	?>
+ }
+
+ // FOR DEBUGGING
+ /*
+ else {
+   print <<<BUTTON
+   <p>Curr Article: $curr_article</p>
+   <p>Cookie: $_COOKIE[$curr_article]</p>
+BUTTON;
+ }
+  */
+
+?>
         </article>
       </div>
 

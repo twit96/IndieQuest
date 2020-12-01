@@ -97,7 +97,7 @@
               $user_text = <<<USER
               <form method="POST">
                 <p class="buttons">
-                  <input class="btn" type="submit" value="Logout">
+                  <input class="btn" name="logout" type="submit" value="Logout">
                 </p>
               </form>
 USER;

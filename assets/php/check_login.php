@@ -78,6 +78,7 @@ function setInitialCookies($mysqli, $username) {
   // set each article cookie from query results
   $row = $result->fetch_row();
   $articles = array(
+	  "",
 	  "amnesia",
 	  "amongus",
 	  "bindingofisaac",
@@ -97,8 +98,11 @@ function setInitialCookies($mysqli, $username) {
 
   $i = 0;
   foreach ($row as &$value) {
-    $this_article = $articles[$i];
-    setcookie($this_article, $value, time()+604800, '/');
+    if ($i != 0) {
+      $this_article = $articles[$i];
+      setcookie($this_article, $value, time()+604800, '/');
+      //echo "Cookie for ".$this_article." is ".$value."\n";
+    }
     $i++;
   }
 }
@@ -107,8 +111,7 @@ function setInitialCookies($mysqli, $username) {
 /**
 * Function to handle the login functionality
 * based off of the given username and password.
-* String indicates successful login, incorrect password, or account created.
-* Returns this string.
+* No return value.
 */
 function checkLogin($mysqli, $username, $password) {
 
@@ -141,8 +144,7 @@ function checkLogin($mysqli, $username, $password) {
 
 /**
 * Engine function to configure required inputs for the above functions.
-* Checks database connection, pulls and handles username and password inputs,
-* and echoes return string
+* Checks database connection and pulls and handles username and password inputs.
 */
 function doEngine() {
 

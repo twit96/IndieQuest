@@ -2,6 +2,75 @@
 
 
 /**
+* Function to display the completed parts of the quest in profile popup.
+*/
+function checkCookies() {
+  $articles = array(
+    "minecraft",
+    "limbo",
+    "amnesia",
+    "bindingofisaac",
+    "evoland",
+    "flappybird",
+    "goatsimulator",
+    "fnaf",
+    "undertale",
+    "rocketleague",
+    "cuphead",
+    "gettingoverit",
+    "amongus",
+    "fallguys",
+    "genshinimpact",	  
+  );
+
+  $true_names = array(
+    "Minecraft",
+    "Limbo",
+    "Amnesia: The Dark Descent",
+    "The Binding of Isaac",
+    "Evoland",
+    "Flappy Bird",
+    "Goat Simulator",
+    "Five Nights At Freddy's",
+    "Undertale",
+    "Rocket League",
+    "Cuphead",
+    "Getting Over It",
+    "Among Us",
+    "Fall Guys: Ultimate Knockout",
+    "Genshin Impact"
+  );
+
+  echo "<p>";
+
+  $i = 0;
+  foreach ($articles as &$value) {
+
+    // grab cookie
+    if (isset($_COOKIE[$value])) {
+      $this_cookie = $_COOKIE[$value];
+
+      // display article completion
+      $this_article = $true_names[$i];
+      
+      if ($this_cookie == 1) {
+        echo "<b>$this_article: Complete!</b>";
+      } else {
+        echo "$this_article: -";
+      }
+
+      echo "<br />";
+    }
+
+    // update index
+    $i++;
+  }
+
+  echo "</p>";
+}
+
+
+/**
 * Function to build and display the html contents of the profile popup
 * based on whether or not the user is logged in.
 * No return value.
@@ -17,11 +86,14 @@ TOP;
   // user logged in popup html contents
   if (isset($_COOKIE['username'])) {
     $username = $_COOKIE['username'];
+    echo "<h1>$username</h1>";
+
+    checkCookies();
+
     echo <<<USER
-      <h1>Good to see you, $username!</h1>
       <form method="POST">
         <p class="buttons">
-          <input class="btn" type="submit" value="Logout">
+          <input class="btn" name="logout" type="submit" value="Logout">
         </p>
       </form>
 USER;
@@ -64,6 +136,7 @@ BOTTOM;
 * No return value.
 */
 function logOut() {
+  // clear cookies
   $cookies = explode(';', $_SERVER['HTTP_COOKIE']);
   foreach($cookies as $cookie) {
     $parts = explode('=', $cookie);
@@ -71,6 +144,12 @@ function logOut() {
   	setcookie($name, '', time()-1000, '/');
   	unset($_COOKIE[$name]);
   	//echo $name." ";
+  }
+
+  // end session if it exists
+  if (!(session_status() == PHP_SESSION_NONE)) {
+    session_unset();
+    session_destroy();
   }
 
   // Refresh Page and Die
@@ -111,8 +190,10 @@ function checkPostVariables() {
     }
   }
 
-  if ((isset($_COOKIE['username'])) && ('POST' === $_SERVER['REQUEST_METHOD'])) {
+  //if ((isset($_COOKIE['username'])) && ('POST' === $_SERVER['REQUEST_METHOD'])) {
+  if ((isset($_COOKIE['username'])) && (isset($_POST['logout']))) {
     // user is logged in and clicked logout button
+    unset($_POST['logout']);
     logOut();
   }
 }
