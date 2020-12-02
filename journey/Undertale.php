@@ -156,7 +156,7 @@ BUTTON;
             <a target="_blank" href="https://undertale.com/">Undertale Website</a>
             <a target="_blank" href="https://undertale.fandom.com/wiki/Main_Page">Undertale Wiki</a>
             <a target="_blank" href="https://twitter.com/Tobyfox">Toby Fox's Twitter</a>
-            <a target="_blank" href="Website https://www.deltarune.com/">Deltarune (Undertale Sequel)</a>
+            <a target="_blank" href="https://www.deltarune.com/">Deltarune (Undertale Sequel)</a>
           </nav>
         </article>
       </div>
