@@ -99,7 +99,7 @@ function checkJourney($mysqli, $username, $curr_article) {
     unset($_POST[$curr_article]);
     doUpdate($mysqli, $username, $curr_article);
     $script = $_SERVER['PHP_SELF'];
-    header("Location: ".$script)
+    header("Location: ".$script);
   }
 
 }
