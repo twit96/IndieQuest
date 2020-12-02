@@ -159,11 +159,10 @@ BUTTON;
         <article>
           <h1>Links</h1>
           <nav>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
+            <a target="_blank" href="https://www.minecraft.net/en-us">Minecraft Website</a>
+            <a target="_blank" href="https://minecraft.gamepedia.com/Minecraft_Wiki">Minecraft Wiki</a>
+            <a target="_blank" href="https://www.minecraft.net/en-us/updates/nether">Recent Nether Update</a>
+            <a target="_blank" href="https://www.minecraft.net/en-us/article/minecraft-live-the-recap">Upcoming Caves and Cliffs Update</a>
           </nav>
         </article>
       </div>

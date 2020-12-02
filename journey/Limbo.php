@@ -153,11 +153,9 @@ BUTTON;
         <article>
           <h1>Links</h1>
           <nav>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
+            <a target="_blank" href="https://www.playdead.com/games/limbo/">External Link</a>
+            <a target="_blank" href="https://en.wikipedia.org/wiki/Limbo_%28video_game%29">Limbo Wiki</a>
+            <a target="_blank" href="https://store.steampowered.com/app/48000/LIMBO/">Limbo Steam Page</a>
           </nav>
         </article>
       </div>

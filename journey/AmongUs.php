@@ -163,11 +163,9 @@ BUTTON;
         <article>
           <h1>Links</h1>
           <nav>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
+            <a target="_blank" href="http://www.innersloth.com/gameAmongUs.php">Among Us Website</a>
+            <a target="_blank" href="https://www.ign.com/wikis/among-us/#Getting_Started">Among Us Wiki</a>
+            <a target="_blank" href="https://innersloth.itch.io/among-us/devlog/181107/the-future-of-among-us">The Future of Among Us</a>
           </nav>
         </article>
       </div>

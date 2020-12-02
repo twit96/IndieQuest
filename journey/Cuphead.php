@@ -157,11 +157,9 @@ BUTTON;
         <article>
           <h1>Links</h1>
           <nav>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
+            <a target="_blank" href="http://www.cupheadgame.com/">Cuphead Website</a>
+            <a target="_blank" href="https://cuphead.fandom.com/wiki/Cuphead_(video_game)">Cuphead Wiki</a>
+            <a target="_blank" href="http://studiomdhr.com/">StudioMDHR Blog</a>
           </nav>
         </article>
       </div>

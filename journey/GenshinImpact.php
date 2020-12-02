@@ -158,11 +158,8 @@ BUTTON;
         <article>
           <h1>Links</h1>
           <nav>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
+            <a target="_blank" href="https://genshin.mihoyo.com/en/home">Genshin Impact Website</a>
+            <a target="_blank" href="https://genshin-impact.fandom.com/wiki/Genshin_Impact_Wiki">Genshin Impact Wiki</a>
           </nav>
         </article>
       </div>

@@ -165,11 +165,9 @@ BUTTON;
         <article>
           <h1>Links</h1>
           <nav>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
+            <a target="_blank" href="https://fallguys.com/">Fall Guys Website</a>
+            <a target="_blank" href="https://en.wikipedia.org/wiki/Fall_Guys">Fall Guys Wiki</a>
+            <a target="_blank" href="https://www.gamespot.com/articles/heres-a-sneak-peak-at-fall-guys-season-3/1100-6484905/">Fall Guys Season 3 Items Sneak Peak</a>
           </nav>
         </article>
       </div>

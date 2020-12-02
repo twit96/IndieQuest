@@ -143,11 +143,9 @@ BUTTON;
         <article>
           <h1>Links</h1>
           <nav>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
+            <a target="_blank" href="https://www.rocketleague.com/">Rocket League Website</a>
+            <a target="_blank" href="https://rocketleague.fandom.com/wiki/Rocket_League_Wiki">Rocket League Wiki</a>
+            <a target="_blank" href="https://esports.rocketleague.com/">Rocket League Esports Website</a>
           </nav>
         </article>
       </div>

@@ -147,11 +147,9 @@ BUTTON;
         <article>
           <h1>Links</h1>
           <nav>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
+            <a target="_blank" href="https://bindingofisaac.com/ ">The Binding of Isaac Game Blog</a>
+            <a target="_blank" href="https://en.wikipedia.org/wiki/The_Binding_of_Isaac_(video_game)">The Binding of Isaac Wiki</a>
+            <a target="_blank" href="https://bindingofisaacrebirth.gamepedia.com/Binding_of_Isaac:_Rebirth_Wiki">The Binding of Isaac: Rebirth Wiki</a>
           </nav>
         </article>
       </div>

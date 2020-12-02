@@ -157,11 +157,9 @@ BUTTON;
         <article>
           <h1>Links</h1>
           <nav>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
+            <a target="_blank" href="https://flappybird.fandom.com/wiki/Flappy_Bird">Flappy Bird Wiki</a>
+            <a target="_blank" href="https://www.amazon.com/Dotgears-Flappy-Birds-Family/dp/B00MA6FBMY">Flappy Birds Family Download</a>
+            <a target="_blank" href="https://twitter.com/dongatory?lang=en">Dong Nguyen Twitter</a>
           </nav>
         </article>
       </div>

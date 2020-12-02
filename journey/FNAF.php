@@ -150,11 +150,9 @@ BUTTON;
         <article>
           <h1>Links</h1>
           <nav>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
+            <a target="_blank" href="http://scottgames.com/">Five Nights at Freddy's Website</a>
+            <a target="_blank" href="https://freddy-fazbears-pizza.fandom.com/wiki/Five_Nights_at_Freddy%27s_Wiki">Five Nights at Freddy's Wiki</a>
+            <a target="_blank" href="https://www.steelwoolstudios.com/five-nights-at-freddys-help-wanted">Five Nights at Freddy's Help Wanted Website</a>
           </nav>
         </article>
       </div>

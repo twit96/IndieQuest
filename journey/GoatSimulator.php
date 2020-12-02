@@ -151,11 +151,9 @@ BUTTON;
         <article>
           <h1>Links</h1>
           <nav>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
+            <a target="_blank" href="https://www.goat-simulator.com/">Goat Simulator Website</a>
+            <a target="_blank" href="https://www.coffeestainstudios.com/games/goat-simulator/">Coffee Stain Studios Goat Simulator Page</a>
+            <a target="_blank" href="https://goatsimulator.gamepedia.com/Official_Goat_Simulator_Wiki">Goat Simulator Wiki</a>
           </nav>
         </article>
       </div>

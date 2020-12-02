@@ -147,11 +147,9 @@ BUTTON;
         <article>
           <h1>Links</h1>
           <nav>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
+            <a target="_blank" href="https://evoland.shirogames.com/">Evoland Website</a>
+            <a target="_blank" href="https://evoland.gamepedia.com/Evoland">Evoland Wiki</a>
+            <a target="_blank" href="https://evoland.gamepedia.com/Evoland_2">Evoland 2 Wiki</a>
           </nav>
         </article>
       </div>

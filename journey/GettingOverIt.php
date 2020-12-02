@@ -148,11 +148,9 @@ BUTTON;
         <article>
           <h1>Links</h1>
           <nav>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
+            <a target="_blank" href="http://www.foddy.net/2017/09/getting-over-it/">Getting Over It Website</a>
+            <a target="_blank" href="https://getting-over-it.fandom.com/wiki/Getting_Over_It">Getting Over It Wiki</a>
+            <a target="_blank" href="https://crappygames.miraheze.org/wiki/Getting_Over_It_with_Bennett_Foddy">Crappy Games Wiki</a>
           </nav>
         </article>
       </div>

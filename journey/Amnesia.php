@@ -151,11 +151,9 @@ BUTTON;
         <article>
           <h1>Links</h1>
           <nav>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
-            <a href="../blank.html">External Link</a>
+            <a target="_blank" href="http://amnesiagame.com/#main">Amnesia Website</a>
+            <a target="_blank" href="https://en.wikipedia.org/wiki/Amnesia:_The_Dark_Descent">Amnesia Wiki</a>
+            <a target="_blank" href="https://amnesiarebirth.com/">Amnesia 2 Website</a>
           </nav>
         </article>
       </div>
