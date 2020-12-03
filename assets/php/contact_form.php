@@ -49,17 +49,17 @@ function buildReturnString($mysqli, $username, $email, $title, $feedback) {
 
   if (verifyUser($mysqli, $username) == 0) {
     // user not in database
-    $return_string .= "You must use a valid username to submit feedback. ";
+    //$return_string .= "You must use a valid username to submit feedback. ";
     $return_string .= '"'.$username . '" is not an existing Indie Quest username.<br />';
   }
 
   if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     // email is invalid
-    $return_string .= "You must use a valid email to submit feedback. ";
+    //$return_string .= "You must use a valid email to submit feedback. ";
     $return_string .= '"'.$email.'" is not a valid email address.<br />';
 
-  } 
-  
+  }
+
   if (($title == '') || ($feedback == '')) {
     // title or feedback is empty
     $return_string .= "The title and feedback fields cannot be empty.<br />";
