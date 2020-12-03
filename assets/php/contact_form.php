@@ -50,7 +50,7 @@ function buildReturnString($mysqli, $username, $email, $title, $feedback) {
   if (verifyUser($mysqli, $username) == 0) {
     // user not in database
     //$return_string .= "You must use a valid username to submit feedback. ";
-    $return_string .= '"'.$username . '" is not an existing Indie Quest username.<br />';
+    $return_string .= '"'.$username . '" is not an existing IndieQuest username.<br />';
   }
 
   if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
