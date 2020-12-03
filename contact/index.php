@@ -10,6 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../assets/js/header_state.js" defer></script>
     <script src="../assets/js/page_config.js" defer></script>
+    <script src="../assets/js/contact_form.js" defer></script>
   </head>
 
   <body>
@@ -39,9 +40,31 @@
       <!-- Profile Popup -->
       <?php include ('../assets/php/profile_popup.php'); ?>
 
-      <div>
+      <div id="left">
         <article>
           <h1>Contact Us</h1>
+          <p id="ajax_container">
+            If you have feedback or questions about the dungeon, send us a
+            direct message here!
+          </p>
+          <form id="contact-form" method="POST">
+            <section>
+              <label>Username: <input type="text" id="user" name="c_username" placeholder="Enter Username Here" required /></label>
+              <label>Email: <input type="text" id="email" name="c_email" placeholder="example@email.com" required /></label>
+              <label>Title: <input type="text" id="title" name="c_subject" placeholder="Title of Your Feedback" required /></label>
+              <label>Feedback: <textarea id="feedback" name="c_feedback" placeholder="Enter Feedback Here" required /></textarea></label>
+              <div class="buttons">
+                <input class="btn" type="button" onclick="ajaxFunction()" value="Submit"/>
+                <button class="btn" type="reset" onclick="resetForm()">Clear</button>
+              </div>
+            </section>
+          </form>
+        </article>
+      </div>
+
+      <div id="center">
+        <article>
+          <h1>Who We Are</h1>
 
           <section>
             <img class="avatar r-float" src="../assets/img/avatar-alexia.jpg" alt="Alexia Avatar" />

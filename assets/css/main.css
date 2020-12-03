@@ -296,7 +296,7 @@ header a {
 }
 
 /* reflow page layout on small screens */
-@media (max-width: 930px) {
+@media (max-width: 975px) {
   /* sidebars shift to top and bottom of page */
   #page-wrapper { flex-direction: column-reverse; }
 
@@ -364,14 +364,43 @@ header a {
   box-shadow: 0 0 0.5em 0.1em var(--nav-bg);
 }
 
-/* @media (max-width: 650px) { .contact .avatar { width: 25%; } } */
-
 /* prevent floated profile images from overflowing container */
 .contact section { overflow: auto;}
 
 /* Contact Links */
 .contact nav { padding-top: 1em; }
 .contact a { margin-right: 0.5em; }
+
+
+/* Contact Form */
+#contact-form label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0.25em 0;
+}
+
+#contact-form input[type=text], #contact-form input[type=password], #contact-form textarea {
+  display: block;
+  padding: 0.5em;
+  width: 100%;
+  border-radius: 15px;
+  border: 1px solid var(--nav-bg);
+  color: var(--link-text);
+}
+
+#contact-form input[type=text]:focus, #contact-form input[type=password]:focus, #contact-form textarea:focus {
+  outline: none;
+  border: 1px solid var(--link-text);
+  box-shadow: 0 0 0.25em 0.1em var(--link-text);
+}
+
+#contact-form textarea {
+  height: 8em;
+}
+
+#contact-form .buttons { margin-top: 0.75em; }
+#contact-form .btn { margin: 0 0.25em; }
 
 /* Footer ------------------------------------------------------------------ */
 footer {
