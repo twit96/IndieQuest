@@ -265,7 +265,7 @@ header a {
   z-index: 2;
 }
 
-#profile .stats span { 
+#profile .stats span {
   display: inline-block;
   width: 100%;
   padding: 0.1em;
@@ -281,21 +281,14 @@ header a {
   color: var(--link-text);
 }
 
-#profile .stats span.completed:before { 
+#profile .stats span.completed:before {
   /* add a check mark */
   content: "\2713";
-  margin-right: 0.5em; 
+  margin-right: 0.5em;
 }
 
 #profile .stats span.incomplete {
   color: var(--nav-bg);
-}
-
-#profile .stats span.incomplete:before {
-  /* add a dot */
-  content: "\1F784";
-  margin-right: 0.5em;
-
 }
 
 @media (max-height: 650px) {
@@ -303,7 +296,7 @@ header a {
     max-height: 50vh;
     overflow: auto;
     border-radius: 5px;
-    padding: 1em; 
+    padding: 1em;
     box-shadow: 0 0 0.5em #000000 inset;
   }
 
