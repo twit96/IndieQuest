@@ -35,7 +35,7 @@ include ('../assets/php/check_journey.php');
         <ul id="top-nav">
           <li><a id="journey-link" href="../journey/">The Journey</a></li>
           <li><a id="contact-link" href="../contact/">Contact</a></li>
-          <li id="profile-icon"><img id="profile-link" src="../assets/img/profile.svg" onclick="toggleForm()" /></li>
+          <li id="profile-icon"><img id="profile-link" src="../assets/img/profile.svg" onclick="toggleForm()" alt="profile" /></li>
         </ul>
       </div>
     </header>

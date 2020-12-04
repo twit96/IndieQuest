@@ -30,7 +30,7 @@
         <ul id="top-nav">
           <li><a id="journey-link" href="../journey/">The Journey</a></li>
           <li><a id="contact-link" href="../contact/">Contact</a></li>
-          <li id="profile-icon"><img id="profile-link" src="../assets/img/profile.svg" onclick="toggleForm()" /></li>
+          <li id="profile-icon"><img id="profile-link" src="../assets/img/profile.svg" onclick="toggleForm()" alt="profile" /></li>
         </ul>
       </div>
     </header>
@@ -52,7 +52,7 @@
               <label>Username: <input type="text" id="user" name="c_username" placeholder="Enter Username Here" required /></label>
               <label>Email: <input type="text" id="email" name="c_email" placeholder="example@email.com" required /></label>
               <label>Title: <input type="text" id="title" name="c_subject" placeholder="Title of Your Feedback" required /></label>
-              <label>Feedback: <textarea id="feedback" name="c_feedback" placeholder="Enter Feedback Here" required /></textarea></label>
+              <label>Feedback: <textarea id="feedback" name="c_feedback" placeholder="Enter Feedback Here" required></textarea></label>
               <div class="buttons">
                 <input class="btn" type="button" onclick="ajaxFunction()" value="Submit"/>
                 <button class="btn" type="reset" onclick="resetForm()">Clear</button>
