@@ -57,7 +57,6 @@ function buildReturnString($mysqli, $username, $email, $title, $feedback) {
     // email is invalid
     //$return_string .= "You must use a valid email to submit feedback. ";
     $return_string .= '"'.$email.'" is not a valid email address.<br />';
-
   }
 
   if (($title == '') || ($feedback == '')) {

@@ -20,7 +20,7 @@ function checkCookies() {
     "gettingoverit",
     "amongus",
     "fallguys",
-    "genshinimpact",
+    "genshinimpact",	  
   );
 
   $true_names = array(
@@ -52,11 +52,11 @@ function checkCookies() {
 
       // display article completion
       $this_article = $true_names[$i];
-
+      
       if ($this_cookie == 1) {
-        echo "<b>$this_article: Complete!</b>";
+        echo '<span class="completed">'.$this_article.': Complete!</span>';
       } else {
-        echo "$this_article: -";
+        echo '<span class="incomplete">'.$this_article.': -</span>';
       }
 
       echo "<br />";
