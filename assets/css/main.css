@@ -80,7 +80,7 @@ iframe {
 }
 
 @media (max-width: 550px) {
-  iframe { height: 40vw; }
+  iframe { height: 45vw; }
 }
 
 section {
