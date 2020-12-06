@@ -97,6 +97,8 @@ include ('../assets/php/check_journey.php');
       <div id="center">
         <article>
           <h1>2010: Amnesia: The Dark Descent</h1>
+	<br>
+	  <iframe width="530" height="350"src="https://www.youtube.com/embed/u1nY_5-UrY4" allowfullscreen></iframe>
           <p>
             Anmesia: The Dark Descent is a survival horror adventure game that was created by the developers Frictional Games
 	    that was released on the PC on September 8, 2010. The player takes on the role of a character named Daniel, who

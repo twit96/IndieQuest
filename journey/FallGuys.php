@@ -97,6 +97,8 @@ include ('../assets/php/check_journey.php');
       <div id="center">
         <article>
           <h1>2020: Fall Guys: Ultimate Knockout</h1>
+	<br>
+	  <iframe width="530" height="350"src="https://www.youtube.com/embed/Wj3dUvGLjNQ" allowfullscreen></iframe>
           <p>
             Up to 60 players compete in matches with battle royale-style gameplay. Players, represented as jellybean-like figures,
 	    move around a three-dimensional playing field, with additional moves such as jumping, grabbing/climbing, or diving to assist

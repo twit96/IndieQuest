@@ -97,6 +97,8 @@ include ('../assets/php/check_journey.php');
       <div id="center">
         <article>
           <h1>2010: Limbo</h1>
+	  <br>
+	  <iframe width="530" height="350"src="https://www.youtube.com/embed/Y4HSyVXKYz8" allowfullscreen></iframe>
           <p>
             Limbo is a puzzle platformer that was created by an independent Danish studio, Playdead.
 	    Microsoft Game studios helped publish the game and released it on July 21, 2010.

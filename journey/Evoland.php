@@ -97,6 +97,8 @@ include ('../assets/php/check_journey.php');
       <div id="center">
         <article>
           <h1>2013: Evoland</h1>
+	<br>
+	  <iframe width="530" height="350"src="https://www.youtube.com/embed/gxBjDGc4YCg" allowfullscreen></iframe>
           <p>
             Evoland, developed by the French indie game development company Shiro Games
 	    and released on April 4th, 2013 for Windows, is a role-playing action-adventure game
