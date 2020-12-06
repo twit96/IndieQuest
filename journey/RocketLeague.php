@@ -98,11 +98,45 @@ include ('../assets/php/check_journey.php');
           <h1>2015: Rocket League/Supersonic Acrobatic Rocket-Powered Battle-Cars</h1>
       	  <iframe width="530" height="350"src="https://www.youtube.com/embed/SgSX3gOrj60" allowfullscreen></iframe>
           <p>
-           Paragraph 1 here
-	  </p>
-          <p>
-            paragraph 2 here
-	   </p>
+             Rocket League is a vehicular soccer video game developed and
+             published by Psyonix. The game was first released for Microsoft
+             Windows and PlayStation 4 in July 2015, with ports for Xbox One
+             and Nintendo Switch being released later on. Psyonix had
+             previously developed Supersonic Acrobatic Rocket-Powered
+             Battle-Cars in 2008 for the PlayStation 3. That title itself bore
+             out from previous modifications that Psyonix' founder, Dave
+             Hagewood, had done for Unreal Tournament 2003 by expanding out
+             vehicle-based gameplay that Epic Games had already set in place
+             in the engine into a new game mode called Onslaught.
+             For this, Hagewood was hired as a contractor by Epic for Unreal
+             Tournament 2004 specifically for incorporating the Onslaught mode
+             as an official part of the game.
+           </p>
+           <p>
+             Hagewood used his experience at Epic to found Psyonix. Among other
+             contract projects, Psyonix worked to try to find a way to make
+             racing the Unreal vehicles in a physics-based engine enjoyable.
+             They had toyed with several options such as race modes or mazes,
+             but found that when they added a ball to the arena to be pushed by
+             the vehicles, they had hit upon the right formula, which would
+             become Battle-Cars. Further to the success was the addition of the
+             rocket-powered cars; this originally was to be a simple speed
+             boost, but with the physics engine, they were able to have the
+             vehicles fly off and around the arena, furthering the
+             possibilities for gameplay.
+           </p>
+           <p>
+             Full development of Rocket League started around 2013 and took
+             around two years and under $2 million to develop, with a third of
+             the development team being contractors, Hagewood said in an
+             interview with the Wall Street Journal. Psyonix had tested various
+             prototypes of a Battle-Cars sequel in the years prior, including
+             an unsuccessful attempt at pitching the game's idea to Electronic
+             Arts in 2011. The company used some of the feedback from
+             Battle-Cars, an early prototype, to fine-tune the gameplay in
+             Rocket League.
+      	  </p>
+
 <?php
 
 $curr_article = getArticleName();
