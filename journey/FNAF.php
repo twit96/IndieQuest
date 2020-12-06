@@ -97,8 +97,7 @@ include ('../assets/php/check_journey.php');
       <div id="center">
         <article>
           <h1>2014: Five Nights at Freddy's</h1>
-	<br>
-	  <iframe width="530" height="350"src="https://www.youtube.com/embed/RP4UTOek0-Y" allowfullscreen></iframe>
+      	  <iframe width="530" height="350"src="https://www.youtube.com/embed/RP4UTOek0-Y" allowfullscreen></iframe>
           <p>Five Nights at Freddy's is a point and click horror survival game created by Scott Cawthon that was released for Windows on July 23, 2014.
 	     Mr. Cawthon initially created Christian games that were not as well known, however, one day someone had complained that one of the characters
 	     from one of his other games thought they looked creepy. The developer then got the idea to create a game that he thought was really frightening

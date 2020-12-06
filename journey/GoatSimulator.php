@@ -97,8 +97,7 @@ include ('../assets/php/check_journey.php');
       <div id="center">
         <article>
           <h1>2014: Goat Simulator</h1>
-	  <br>
-	  <iframe width="530" height="350"src="https://www.youtube.com/embed/dvWGLcdI8o8" allowfullscreen></iframe>
+      	  <iframe width="530" height="350"src="https://www.youtube.com/embed/dvWGLcdI8o8" allowfullscreen></iframe>
           <p>
             Goat Simulator, developed by Swedish game developer Coffee Stain Studios and released
 	    on April 1, 2014, is an action sandbox game in which you play as a goat trying to do as

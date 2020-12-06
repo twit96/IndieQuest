@@ -97,8 +97,7 @@ include ('../assets/php/check_journey.php');
       <div id="center">
         <article>
           <h1>2017: Getting Over It</h1>
-	  <br>
-	  <iframe width="530" height="350"src="https://www.youtube.com/embed/wzjuQ3K72u4" allowfullscreen></iframe>
+      	  <iframe width="530" height="350"src="https://www.youtube.com/embed/wzjuQ3K72u4" allowfullscreen></iframe>
           <p>
             Getting Over It revolves around a man by the name of Diogenes - who, somewhat true to his namesake,
 	    resides in a large metal cauldron - and wields a Yosemite hammer, which he can use to grip objects and move himself.

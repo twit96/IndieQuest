@@ -97,8 +97,7 @@ include ('../assets/php/check_journey.php');
       <div id="center">
         <article>
           <h1>2011: The Binding of Isaac</h1>
-	  <br>
-	  <iframe width="530" height="350"src="https://www.youtube.com/embed/27Le3kOOFQk" allowfullscreen></iframe>
+      	  <iframe width="530" height="350"src="https://www.youtube.com/embed/27Le3kOOFQk" allowfullscreen></iframe>
           <p>
             The Binding of Isaac is a roguelike game created by the developers Edmund McMillen and Florian Himsl that was initially released on Windows on September 28, 2011.
 	    It was created in a week for a game jam that uses randomly generated environments. The game features a top down dungeon crawler aspect where the player takes on the role of Isaac.

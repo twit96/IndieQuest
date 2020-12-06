@@ -97,8 +97,7 @@ include ('../assets/php/check_journey.php');
       <div id="center">
         <article>
           <h1>2017: Cuphead</h1>
-	<br>
-	  <iframe width="530" height="350"src="https://www.youtube.com/embed/NN-9SQXoi50" allowfullscreen></iframe>
+      	  <iframe width="530" height="350"src="https://www.youtube.com/embed/NN-9SQXoi50" allowfullscreen></iframe>
           <p>
             Cuphead, developed and published by the independent game developer StudioMDHR and released
 	    on September 29, 2017, is a run and gun action game in which players repay their debt to

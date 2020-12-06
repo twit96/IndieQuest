@@ -97,8 +97,7 @@ include ('../assets/php/check_journey.php');
       <div id="center">
         <article>
           <h1>2020: Genshin Impact</h1>
-	  <br>
-	  <iframe width="530" height="350"src="https://www.youtube.com/embed/HLUY1nICQRY" allowfullscreen></iframe>
+      	  <iframe width="530" height="350"src="https://www.youtube.com/embed/HLUY1nICQRY" allowfullscreen></iframe>
           <p>
             Genshin Impact is an open world action role-playing game that allows the player to control one of four interchangeable characters in a party.
 	    Switching between characters can be done quickly and during combat to the player to use several different combinations of skills and attacks.

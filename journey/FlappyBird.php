@@ -97,8 +97,7 @@ include ('../assets/php/check_journey.php');
       <div id="center">
         <article>
           <h1>2013: Flappy Bird</h1>
-	<br>
-	  <iframe width="530" height="350"src="https://www.youtube.com/embed/fQoJZuBwrkU" allowfullscreen></iframe>
+      	  <iframe width="530" height="350"src="https://www.youtube.com/embed/fQoJZuBwrkU" allowfullscreen></iframe>
           <p>
             Flappy Bird, developed by Dong Nguyen and released on May 24, 2013, is a mobile
 	    side-scroller arcade game in which the player tries to fly a bird between columns

@@ -97,8 +97,7 @@ include ('../assets/php/check_journey.php');
       <div id="center">
         <article>
           <h1>2015: Rocket League/Supersonic Acrobatic Rocket-Powered Battle-Cars</h1>
-	  <br>
-	  <iframe width="530" height="350"src="https://www.youtube.com/embed/SgSX3gOrj60" allowfullscreen></iframe>
+      	  <iframe width="530" height="350"src="https://www.youtube.com/embed/SgSX3gOrj60" allowfullscreen></iframe>
           <p>
            Paragraph 1 here
 	  </p>

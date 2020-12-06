@@ -97,9 +97,7 @@ include ('../assets/php/check_journey.php');
       <div id="center">
         <article>
           <h1>2018: Among Us</h1>
-	  <br>
-	  <iframe width="530" height="350"src="https://www.youtube.com/embed/ZHhk0dDJwBM" allowfullscreen></iframe>
-
+      	  <iframe width="530" height="350" src="https://www.youtube.com/embed/ZHhk0dDJwBM" allowfullscreen></iframe>
           <p>
             Among Us was inspired by the live party game Mafia, and was initially intended to be a mobile-only
 	    local multiplayer game with a single map. Originally, the game had no audio to avoid revealing hidden

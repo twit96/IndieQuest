@@ -97,8 +97,7 @@ include ('../assets/php/check_journey.php');
       <div id="center">
         <article>
           <h1>2015: Undertale</h1>
-  	  <br>
-	  <iframe width="530" height="350"src="https://www.youtube.com/embed/1Hojv0m3TqA" allowfullscreen></iframe>
+      	  <iframe width="530" height="350"src="https://www.youtube.com/embed/1Hojv0m3TqA" allowfullscreen></iframe>
           <p>
             Undertale is a role playing, puzzle game that was created by Toby Fox and released on the PC on September 15, 2015.
 	    The game starts off with the backstory of a battle between human and monsters that ends in the monsters being banished to the underground.
