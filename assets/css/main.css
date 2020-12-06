@@ -42,7 +42,6 @@ body {
   /* font-family: Verdana, Geneva, sans-serif; */
   font-family: Artifika;
   line-height: 175%;
-  /* background-color: yellow; */
 }
 
 /* link style */
@@ -167,9 +166,7 @@ a.active {
   /* set background image */
   background-image: url("../../assets/img/banner.png");
   background-position: center;
-  /* background-size: cover; */
   background-size: contain;
-  /* background-repeat: no-repeat; */
   background-repeat: repeat;
 }
 
@@ -230,7 +227,6 @@ header a {
 /* profile icon */
 #profile-icon {
   border-radius: 50%;
-  /* border: 2px solid var(--nav-bg); */
 }
 
 #profile-icon img {
@@ -238,7 +234,6 @@ header a {
 }
 
 #profile-icon:hover {
-  /* border: 2px dotted white; */
   box-shadow: 0 0 0.5em 0.25em var(--link-text) inset;
   cursor: pointer;
 }
@@ -412,7 +407,6 @@ header a {
   max-width: 75%;
   display: flex;
   flex-direction: column;
-  /* background-color: green; */
 }
 
 /* Profile Images */
