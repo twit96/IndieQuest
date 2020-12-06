@@ -52,7 +52,6 @@ a {
 
 a:hover { text-decoration: underline; }
 
-
 /* content areas */
 article {
   /* layout style */
@@ -81,6 +80,12 @@ iframe {
 @media (max-width: 550px) {
   iframe { height: 45vw; }
 }
+
+input {
+  /* remove iOS defaults */
+  -webkit-appearance: none;
+}
+
 
 section {
   /* layout style */
