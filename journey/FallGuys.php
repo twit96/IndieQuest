@@ -88,8 +88,7 @@ include ('../assets/php/check_journey.php');
             </nav>
           </section>
 
-
-          <a class="btn" href="../blank.html">Random Destination</a>
+          <?php include ('../assets/php/random_destination.php'); ?>
 
         </article>
       </div>
