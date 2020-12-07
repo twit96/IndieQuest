@@ -469,18 +469,6 @@ footer {
   justify-content: space-between;
   align-items: center;
   color: white;
-
- }
-
-/* fix footer on tall screens */
-@media (min-height: 950px ) {
-  footer {
-    position: fixed;
-    left: 0; bottom: 0; right: 0;
-  }
-
-  /* accommodate fixed footer in page layout */
-  #page-wrapper { padding-bottom: 50px; }
 }
 
 /* reflow footer on narrow screens */
@@ -489,5 +477,19 @@ footer {
     flex-direction: column;
     align-items: flex-start;
   }
+}
+
+/* fix footer on tall screens */
+@media (min-height: 950px ) {
+  footer {
+    position: fixed;
+    left: 0; bottom: 0; right: 0;
+  }
+  /* accommodate fixed footer in page layout */
+  #page-wrapper { padding-bottom: 50px; }
+}
+
+@media (max-width: 650px) and (min-height: 950px) {
+  /* accomodate fixed footer on tall and narrow screens */
   #page-wrapper { padding-bottom: 75px; }
 }
