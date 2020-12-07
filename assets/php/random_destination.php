@@ -13,7 +13,7 @@ $articles = array(
   "GenshinImpact.php",
   "GettingOverIt.php",
   "GoatSimulator.php",
-  "index.php",
+  "./",
   "Limbo.php",
   "RocketLeague.php",
   "Undertale.php"
