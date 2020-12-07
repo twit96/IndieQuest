@@ -469,14 +469,21 @@ footer {
   justify-content: space-between;
   align-items: center;
   color: white;
-  position: fixed;
-  left: 0; bottom: 0; right: 0;
+
  }
 
-/* accommodate fixed footer in page layout */
-#page-wrapper { padding-bottom: 50px; }
+/* fix footer on tall screens */
+@media (min-height: 950px ) {
+  footer {
+    position: fixed;
+    left: 0; bottom: 0; right: 0;
+  }
 
-/* reflow footer on small screens */
+  /* accommodate fixed footer in page layout */
+  #page-wrapper { padding-bottom: 50px; }
+}
+
+/* reflow footer on narrow screens */
 @media (max-width: 650px) {
   footer .wrapper {
     flex-direction: column;
