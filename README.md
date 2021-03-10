@@ -19,6 +19,8 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## Table of Contents
 - [Desktop Design](#desktop-description)
+- [Homepage](#homepage)
+- [Contact Page](#contact-page)
 - [Contributors](#project-contributors)
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -38,6 +40,14 @@ In addition, clicking the profile icon will display a customized popup showing y
 articles you have read and which you have not yet read.
 
 ![Full Popup Home](/readme-files/full-popup-home.png)
+
+## Contact Page 
+The contact page features images, blurbs, and relevant links pertaining to the project contributors.
+In addition, an AJAX *contact us* form provides immediate user feedback on submissions, with backend 
+PHP validation to ensure feedback comes from users with an account. This page, unlike the "The Journey"
+page, **can** be accessed before a user logs in.
+
+![Full Contact Page](/readme-files/full-contact.png)
 
 ## Project Contributors
 [Alexia Carmona](https://www.lexc-draws.com/) • [Cooper Fryar](https://github.com/CooperFryar) • [Tyler Wittig](https://twit96.github.io/)
