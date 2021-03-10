@@ -30,7 +30,7 @@ and a section asking you to sign in. Clicking "The Journey" link in the navigati
 will always redirect you to the homepage if you are logged out, and clicking the profile icon
 in the top right corner will open a prompt asking you to log in.
 
-<img style="width:250px;" alt="Full Home Logged Out" src="/readme-files/full-home-loggedout.png">
+<img alt="Full Home Logged Out" src="/readme-files/full-home-loggedout.png" width=250>
 
 After logging in, the homepage will update the login blurb to display your name. In addition,
 clicking the profile icon will display a customized popup showing you which articles you have read
