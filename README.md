@@ -23,9 +23,12 @@
  <a href="https://twit96.github.io/">Tyler Wittig</a>
 </p>
 
+<hr>
+
 ## Desktop Design
 <p align="center">
   <img alt="Full Home Logged Out" src="/readme-files/full-home-loggedout.png">
+  <br />
   The homepage features an introduction blurb, current events, an about us blurb, 
   and a section asking you to sign in. Clicking "The Journey" link in the navigation bar
   will always redirect you to the homepage if you are logged out.
