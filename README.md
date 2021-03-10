@@ -33,8 +33,10 @@ clicking the profile icon will display a customized popup showing you which arti
 and which you have not yet read.
 
 ### Desktop
-<img alt="Full Home Logged Out" src="/readme-files/full-home-loggedout.png" width="50%">
-<img alt="Full Home Logged In" src="/readme-files/full-home-loggedin.png" width="50%">
+<p align="center">
+  <img alt="Full Home Logged Out" src="/readme-files/full-home-loggedout.png" width="40%">
+  <img alt="Full Home Logged In" src="/readme-files/full-home-loggedin.png" width="40%">
+</p>
 
 ![Full Popup Home](/readme-files/full-popup-home.png)
 
