@@ -43,7 +43,7 @@ articles you have read and which you have not yet read.
 
 
 ## The Journey Page
-The main application of the IndieQuest website is to takes its users on a journey through the history
+The main application of the IndieQuest website is to take its users on a journey through the history
 of indie games. This is achieved by a chronologically ordered set of articles pertaining to some of 
 the best-known indie games. On each indie game article page, the middle column provides a game trailer, 
 and discusses the game in detail. At the bottom of each article, a button with the words "Collect 
@@ -70,23 +70,31 @@ Throughout the design process, IndieQuest was geared towards mobile-responsivene
 is able to scale down to mobile screens, all with the same CSS code that caters to desktop users.
 
 ### Homepage
-![Full Home Logged In](/readme-files/full-home-loggedin.png)
-![Medium Home](/readme-files/medium-home.png)
+<p align="center">
+  <img alt="Full Home Logged In" src="/readme-files/full-home-loggedin.png">
+  <img alt="Medium Home" src="/readme-files/medium-home.png">
+</p>
 
 ### The Journey Page
-![Full Journey Page](/readme-files/full-journey.png)
-![Medium Home](/readme-files/small-journey.png)
+<p align="center">
+  <img alt="Full Journey Page" src="/readme-files/full-journey.png">
+  <img alt="Small Journey Page" src="/readme-files/small-journey.png">
+</p>
 
 ### Contact Page
-![Full Contact Page](/readme-files/full-contact.png)
-![Medium Home](/readme-files/small-contact.png)
+<p align="center">
+  <img alt="Full Contact Page" src="/readme-files/full-contact.png">
+  <img alt="Small Contact Page" src="/readme-files/small-contact.png">
+</p>
 
 ### Profile Popup
-Even the profile popup was designed to accomodate mobile screens, as it is even responsive to mobile screens 
+Even the profile popup was designed to accommodate mobile screens, as it is even responsive to mobile screens 
 in landscape mode.
-![Full Popup](/readme-files/full-popup-home.png)
-![Small Profile Portrait](/readme-files/small-profile-portrait.png)
-![Small Profile Landscape](/readme-files/small-profile-landscape.png)
+<p align="center">
+  <img alt="Full Popup" src="/readme-files/full-popup-home.png">
+  <img alt="Small Profile Portrait" src="/readme-files/small-profile-portrait.png">
+  <img alt="Small Profile Landscape" src="/readme-files/small-profile-landscape.png">
+</p>
 
 
 ## Project Contributors
