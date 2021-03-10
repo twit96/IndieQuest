@@ -18,7 +18,7 @@
 <!-- Contributors -->
 <h1 align="center">Project Contributors</h1>
 <p align="center">
- <a href="https://www.lexc-draws.com/">Alexia Carmona</a><br />
- <a href="https://github.com/CooperFryar">Cooper Fryar</a><br />
- <a href="https://twit96.github.io/">Tyler Wittig</a><br />
+ <a href="https://www.lexc-draws.com/">Alexia Carmona</a> • 
+ <a href="https://github.com/CooperFryar">Cooper Fryar</a> • 
+ <a href="https://twit96.github.io/">Tyler Wittig</a>
 </p>
