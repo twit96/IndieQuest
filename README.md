@@ -3,7 +3,7 @@
 
 <!-- Title Image -->
 <p align="center">
-  <img border="0" alt="IndieQuest - Title Card" src="/assets/img/title-card.png">
+  <img border="0" alt="IndieQuest - Title Card" src="/readme-files/title-card.png">
 </p>
 
 <!-- Project Description -->
