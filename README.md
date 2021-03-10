@@ -16,7 +16,7 @@
 </p>
 
 <!-- Contributors -->
-<h1 align="center">Project Contributors</h1>
+<h2 align="center">Project Contributors</h2>
 <p align="center">
  <a href="https://www.lexc-draws.com/">Alexia Carmona</a> • 
  <a href="https://github.com/CooperFryar">Cooper Fryar</a> • 
