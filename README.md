@@ -24,6 +24,7 @@
 - [Contributors](#project-contributors)
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
+
 ## Homepage
 The homepage features an introduction blurb, current events, an about us blurb, 
 and a section asking you to sign in. Clicking "The Journey" link in the navigation bar
@@ -41,9 +42,24 @@ articles you have read and which you have not yet read.
 
 ![Full Popup Home](/readme-files/full-popup-home.png)
 
+
+## The Journey Page
+The main application of the IndieQuest website is to takes its users on a journey through the history
+of indie games. This is achieved by a chronologically ordered set of articles pertaining to some of 
+the best-known indie games. On each indie game article page, the middle column provides a game trailer, 
+and discusses the game in detail. At the bottom of each article, a button with the words "Collect 
+Gaming History Piece" can be found. When the user clicks this button, their profile popup stats are 
+updated to show that they have read the article. 
+
+On the right sidebar, relevant links for the game can be found. On the left sidebar, users can access 
+any of the articles on IndieQuest, displayed in the order that the games were released in. 
+
+![Full Journey Page](/readme-files/full-journey.png)
+
+
 ## Contact Page 
 The contact page features images, blurbs, and relevant links pertaining to the project contributors.
-In addition, an AJAX *contact us* form provides immediate user feedback on submissions, with backend 
+In addition, an AJAX *Contact Us* form provides immediate user feedback on submissions, with backend 
 PHP validation to ensure feedback comes from users with an account. This page, unlike the "The Journey"
 page, **can** be accessed before a user logs in.
 
