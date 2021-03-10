@@ -13,14 +13,14 @@
   IndieQuest is a mobile-responsive, dynamic blog website that sends users on a quest to read all of its articles - powered by PHP, SQL, JavaScript, and CSS.
 </p>
 
----
-
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## Table of Contents
 - [Desktop Design](#desktop-description)
 - [Homepage](#homepage)
+- [The Journey Page](#the-journey-page)
 - [Contact Page](#contact-page)
+- [Responsive Design](#responsive-design)
 - [Contributors](#project-contributors)
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -37,7 +37,7 @@ After logging in, the homepage will update the login blurb to display your name.
 
 ![Full Home Logged In](/readme-files/full-home-loggedin.png)
 
-In addition, clicking the profile icon will display a customized popup showing you which 
+In addition, clicking the profile icon will now display a customized popup showing you which 
 articles you have read and which you have not yet read.
 
 ![Full Popup Home](/readme-files/full-popup-home.png)
@@ -64,6 +64,31 @@ PHP validation to ensure feedback comes from users with an account. This page, u
 page, **can** be accessed before a user logs in.
 
 ![Full Contact Page](/readme-files/full-contact.png)
+
+
+## Responsive Design
+Throughout the design process, IndieQuest was geared towards mobile-responsiveness. As such, the website
+is able to scale down to mobile screens, all with the same CSS code that caters to desktop users.
+
+### Homepage
+![Full Home Logged In](/readme-files/full-home-loggedin.png)
+![Medium Home](/readme-files/medium-home.png)
+
+### The Journey Page
+![Full Journey Page](/readme-files/full-journey.png)
+![Medium Home](/readme-files/small-journey.png)
+
+### Contact Page
+![Full Contact Page](/readme-files/full-contact.png)
+![Medium Home](/readme-files/small-contact.png)
+
+### Profile Popup
+Even the profile popup was designed to accomodate mobile screens, as it is even responsive to mobile screens 
+in landscape mode.
+![Full Popup](/readme-files/full-popup-home.png)
+![Small Profile Portrait](/readme-files/small-profile-portrait.png)
+![Small Profile Landscape](/readme-files/small-profile-landscape.png)
+
 
 ## Project Contributors
 [Alexia Carmona](https://www.lexc-draws.com/) • [Cooper Fryar](https://github.com/CooperFryar) • [Tyler Wittig](https://twit96.github.io/)
