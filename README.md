@@ -88,8 +88,8 @@ is able to scale down to mobile screens, all with the same CSS code that caters 
 </p>
 
 ### Profile Popup
-Even the profile popup was designed to accommodate mobile screens, as it is even responsive to mobile screens 
-in landscape mode.
+Even the profile popup was designed to accommodate mobile screens, as it is responsive to mobile screens 
+in portrait and landscape mode.
 <p align="center">
   <img alt="Full Popup" src="/readme-files/full-popup-home.png">
   <img alt="Small Profile Portrait" src="/readme-files/small-profile-portrait.png">
