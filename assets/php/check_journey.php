@@ -45,7 +45,10 @@ function getArticleName() {
   $url_path = $_SERVER['REQUEST_URI'];
   $pieces = explode('/', $url_path);
 
-  $name_piece = $pieces[5];
+  // for UT CS setup
+  //$name_piece = $pieces[5];
+  //for wittig portfolio setup
+  $name_piece = $pieces[3];
   if (($name_piece == '') || ($name_piece == 'index.php')) { $name_piece = 'minecraft'; }
 
   $trimmed = trim($name_piece, ".php");
