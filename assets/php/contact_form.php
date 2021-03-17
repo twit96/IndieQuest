@@ -81,10 +81,17 @@ function buildReturnString($mysqli, $username, $email, $title, $feedback) {
 * Checks database connection, handles user inputs, then calls buildReturnString().
 */
 function doEngine() {
-  $server = "fall-2020.cs.utexas.edu";
-  $user   = "cs329e_bulko_wittig";
-  $pwd    = "format6arch4swamp";
-  $dbName = "cs329e_bulko_wittig";
+  // UT CS Setup
+  //$server = "fall-2020.cs.utexas.edu";
+  //$user   = "cs329e_bulko_wittig";
+  //$pwd    = "format6arch4swamp";
+  //$dbName = "cs329e_bulko_wittig";
+  
+  // Wittig Portfolio Setup
+  $server = "localhost";
+  $user   = "iq_user";
+  $pwd    = "iq_user_pass";
+  $dbName = "IndieQuest";
 
   // For debugging only
   //echo "Server: ".$server."<br>";
