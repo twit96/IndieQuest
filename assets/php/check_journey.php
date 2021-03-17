@@ -112,15 +112,22 @@ function checkJourney($mysqli, $username, $curr_article) {
 */
 function doEngine() {
 
-  $server = "fall-2020.cs.utexas.edu";
-  $user   = "cs329e_bulko_wittig";
-  $pwd    = "format6arch4swamp";
-  $dbName = "cs329e_bulko_wittig";
+  // UT CS Setup
+  //$server = "fall-2020.cs.utexas.edu";
+  //$user   = "cs329e_bulko_wittig";
+  //$pwd    = "format6arch4swamp";
+  //$dbName = "cs329e_bulko_wittig";
+  
+  // Wittig Portfolio Setup
+  $server = "localhost";
+  $user   = "root";
+  $pwd    = "sAF15bHS19Ut!";
+  $dbName = "IndieQuest";
 
   // For debugging only
-  //echo "Server: ".$server."<br>";
-  //echo "User: ".$user."<br>";
-  //echo "Database name: ".$dbName."<br>";
+  echo "Server: ".$server."<br>";
+  echo "User: ".$user."<br>";
+  echo "Database name: ".$dbName."<br>";
 
   // Connect to MySQL Server
   $mysqli = new mysqli ($server, $user, $pwd, $dbName);
