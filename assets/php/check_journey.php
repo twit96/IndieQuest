@@ -120,8 +120,8 @@ function doEngine() {
   
   // Wittig Portfolio Setup
   $server = "localhost";
-  $user   = "root";
-  $pwd    = "sAF15bHS19Ut!";
+  $user   = "iq_user";
+  $pwd    = "iq_user_pass";
   $dbName = "IndieQuest";
 
   // For debugging only
