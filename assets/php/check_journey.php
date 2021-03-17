@@ -128,9 +128,9 @@ function doEngine() {
   $dbName = "IndieQuest";
 
   // For debugging only
-  echo "Server: ".$server."<br>";
-  echo "User: ".$user."<br>";
-  echo "Database name: ".$dbName."<br>";
+  //echo "Server: ".$server."<br>";
+  //echo "User: ".$user."<br>";
+  //echo "Database name: ".$dbName."<br>";
 
   // Connect to MySQL Server
   $mysqli = new mysqli ($server, $user, $pwd, $dbName);
