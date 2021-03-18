@@ -29,8 +29,6 @@ function checkUser($mysqli, $username) {
   if (!$result) { die("Query failed: ($mysqli->error <br>"); }
   // $user_in_db will be 1 if in database and 0 if not in database
   $user_in_db = $result->fetch_row()[0];
-  echo("user in db:");
-  echo($user_in_db);
   return $user_in_db;
 }
 
@@ -46,8 +44,6 @@ function checkPass($mysqli, $username, $password) {
   if (!$result) { die("Query failed: ($mysqli->error <br>"); }
   // $pass_in_db will be 1 if in database and 0 if not in database
   $pass_in_db = $result->fetch_row()[0];
-  echo("pass in db:");
-  echo($pass_in_db);
   return $pass_in_db;
 }
 
