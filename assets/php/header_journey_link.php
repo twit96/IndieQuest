@@ -8,7 +8,7 @@ if (isset($_COOKIE['username'])) {
   // handle cases of homepage path vs not homepage path
   $url_path = $_SERVER['REQUEST_URI'];
   $pieces = explode('/', $url_path);
-  $piece = $pieces[4];
+  $piece = $pieces[3];
   // homepage
   if ($piece == '') { $journey_href = 'journey/'; }
   // contact page ($piece == journey || contact)
