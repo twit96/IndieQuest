@@ -27,10 +27,7 @@
           <h1>IndieQuest</h1>
         </a>
         <ul id="top-nav">
-          <?php
-          DEFINE("PATHPREFIX", './');
-          include ('./assets/php/header_journey_link.php');
-          ?>
+          <?php include ('./assets/php/header_journey_link.php'); ?>
           <li><a id="contact-link" href="contact/">Contact</a></li>
           <li id="profile-icon"><img id="profile-link" src="assets/img/profile.svg" onclick="toggleForm()" alt="profile" /></li>
         </ul>
