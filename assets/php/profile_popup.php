@@ -173,7 +173,7 @@ function checkPostVariables() {
       // check login - handle cases of homepage path vs not homepage path
       $url_path = $_SERVER['REQUEST_URI'];
       $pieces = explode('/', $url_path);
-      $piece = $pieces[4];
+      $piece = $pieces[2];
 
       if ($piece == '') {
         // homepage
