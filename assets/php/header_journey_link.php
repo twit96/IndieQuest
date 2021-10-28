@@ -9,7 +9,7 @@ if (isset($_COOKIE['username'])) {
   $url_path = $_SERVER['REQUEST_URI'];
   $pieces = explode('/', $url_path);
   $piece = $pieces[2];
-  // echo '<script>console.log("0.'.$pieces[0].', 1.'.$pieces[1].', 2.'.$pieces[2].', 3.'.$pieces[3].', 4.'.$pieces[4].'")</script>';
+  echo '<script>console.log("Length: '.sizeof($pieces).' Last Elem: '.$pieces[sizeof($pieces) - 1].'  0.'.$pieces[0].', 1.'.$pieces[1].', 2.'.$pieces[2].', 3.'.$pieces[3].', 4.'.$pieces[4].'")</script>';
   // homepage
   if ($piece == '') { $journey_href = 'journey/'; }
   // contact page ($piece == journey || contact)
