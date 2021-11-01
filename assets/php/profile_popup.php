@@ -135,7 +135,7 @@ function logOut($articles) {
 * Function to check and handle if username and password post values are set.
 * Calls check_login.php if so.
 */
-function checkPostVariables() {
+function checkPostVariables($articles) {
 
   if (isset($_POST['username']) && isset($_POST['password'])) {
     // post variables are set
