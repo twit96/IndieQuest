@@ -1,46 +1,10 @@
 <?php
 
-$articles = array(
-  "minecraft",
-  "limbo",
-  "amnesia",
-  "bindingofisaac",
-  "evoland",
-  "flappybird",
-  "goatsimulator",
-  "fnaf",
-  "undertale",
-  "rocketleague",
-  "cuphead",
-  "gettingoverit",
-  "amongus",
-  "fallguys",
-  "genshinimpact",
-);
-
-$true_names = array(
-  "Minecraft",
-  "Limbo",
-  "Amnesia: The Dark Descent",
-  "The Binding of Isaac",
-  "Evoland",
-  "Flappy Bird",
-  "Goat Simulator",
-  "Five Nights At Freddy's",
-  "Undertale",
-  "Rocket League",
-  "Cuphead",
-  "Getting Over It",
-  "Among Us",
-  "Fall Guys: Ultimate Knockout",
-  "Genshin Impact"
-);
-
 
 /**
 * Function to display the completed parts of the quest in profile popup.
 */
-function checkCookies() {
+function checkCookies($articles, $true_names) {
   echo '<p class="stats">';
 
   $i = 0;
@@ -75,7 +39,7 @@ function checkCookies() {
 * based on whether or not the user is logged in.
 * No return value.
 */
-function buildPopup() {
+function buildPopup($articles, $true_names) {
 
   // opening html
   echo <<<TOP
@@ -88,7 +52,7 @@ TOP;
     $username = $_COOKIE['username'];
     echo "<h1>$username</h1>";
 
-    checkCookies();
+    checkCookies($articles, $true_names);
 
     echo <<<USER
       <form method="POST">
@@ -144,7 +108,7 @@ function unsetCookie($c_name) {
 * Function to log user out of website by unsetting cookie.
 * No return value.
 */
-function logOut() {
+function logOut($articles) {
   // clear cookies
   $cookies = explode(';', $_SERVER['HTTP_COOKIE']);
   foreach($cookies as $cookie) {
@@ -203,16 +167,59 @@ function checkPostVariables() {
   if ((isset($_COOKIE['username'])) && (isset($_POST['logout']))) {
     // user is logged in and clicked logout button
     unset($_POST['logout']);
-    logOut();
+    logOut($articles);
   }
 }
 
+
+/**
+* Engine function for the profile popup.
+*/
+function doEngine() {
+  $articles = array(
+    "minecraft",
+    "limbo",
+    "amnesia",
+    "bindingofisaac",
+    "evoland",
+    "flappybird",
+    "goatsimulator",
+    "fnaf",
+    "undertale",
+    "rocketleague",
+    "cuphead",
+    "gettingoverit",
+    "amongus",
+    "fallguys",
+    "genshinimpact",
+  );
+
+  $true_names = array(
+    "Minecraft",
+    "Limbo",
+    "Amnesia: The Dark Descent",
+    "The Binding of Isaac",
+    "Evoland",
+    "Flappy Bird",
+    "Goat Simulator",
+    "Five Nights At Freddy's",
+    "Undertale",
+    "Rocket League",
+    "Cuphead",
+    "Getting Over It",
+    "Among Us",
+    "Fall Guys: Ultimate Knockout",
+    "Genshin Impact"
+  );
+
+  buildPopup($articles, $true_names);
+  checkPostVariables();
+}
 
 
 /**
 * Initial Call to Build Popup
 */
-buildPopup();
-checkPostVariables();
+doEngine();
 
 ?>
