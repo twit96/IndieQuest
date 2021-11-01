@@ -1,46 +1,46 @@
 <?php
 
+$articles = array(
+  "minecraft",
+  "limbo",
+  "amnesia",
+  "bindingofisaac",
+  "evoland",
+  "flappybird",
+  "goatsimulator",
+  "fnaf",
+  "undertale",
+  "rocketleague",
+  "cuphead",
+  "gettingoverit",
+  "amongus",
+  "fallguys",
+  "genshinimpact",
+);
+
+$true_names = array(
+  "Minecraft",
+  "Limbo",
+  "Amnesia: The Dark Descent",
+  "The Binding of Isaac",
+  "Evoland",
+  "Flappy Bird",
+  "Goat Simulator",
+  "Five Nights At Freddy's",
+  "Undertale",
+  "Rocket League",
+  "Cuphead",
+  "Getting Over It",
+  "Among Us",
+  "Fall Guys: Ultimate Knockout",
+  "Genshin Impact"
+);
+
 
 /**
 * Function to display the completed parts of the quest in profile popup.
 */
 function checkCookies() {
-  $articles = array(
-    "minecraft",
-    "limbo",
-    "amnesia",
-    "bindingofisaac",
-    "evoland",
-    "flappybird",
-    "goatsimulator",
-    "fnaf",
-    "undertale",
-    "rocketleague",
-    "cuphead",
-    "gettingoverit",
-    "amongus",
-    "fallguys",
-    "genshinimpact",
-  );
-
-  $true_names = array(
-    "Minecraft",
-    "Limbo",
-    "Amnesia: The Dark Descent",
-    "The Binding of Isaac",
-    "Evoland",
-    "Flappy Bird",
-    "Goat Simulator",
-    "Five Nights At Freddy's",
-    "Undertale",
-    "Rocket League",
-    "Cuphead",
-    "Getting Over It",
-    "Among Us",
-    "Fall Guys: Ultimate Knockout",
-    "Genshin Impact"
-  );
-
   echo '<p class="stats">';
 
   $i = 0;
@@ -132,6 +132,15 @@ BOTTOM;
 
 
 /**
+* Function to unset a cookie of a given name. Used by logOut() function below.
+*/
+function unsetCookie($c_name) {
+  setcookie($c_name, '', time()-1000, '/');
+  unset($_COOKIE[$c_name]);
+}
+
+
+/**
 * Function to log user out of website by unsetting cookie.
 * No return value.
 */
@@ -141,9 +150,9 @@ function logOut() {
   foreach($cookies as $cookie) {
     $parts = explode('=', $cookie);
     $name = trim($parts[0]);
-  	setcookie($name, '', time()-1000, '/');
-  	unset($_COOKIE[$name]);
-  	//echo $name." ";
+    if ((in_array($name, $articles)) || ($name == 'username')) {
+      unsetCookie($name);
+    }
   }
 
   // end session if it exists
