@@ -2,6 +2,12 @@
 
 
 /**
+* Display all errors.
+*/
+error_reporting(E_ALL);
+ini_set("display_errors", "on");
+
+/**
 * Function to display the completed parts of the quest in profile popup.
 */
 function checkCookies($articles, $true_names) {
@@ -213,7 +219,7 @@ function doEngine() {
   );
 
   buildPopup($articles, $true_names);
-  checkPostVariables();
+  checkPostVariables($articles);
 }
 
 
