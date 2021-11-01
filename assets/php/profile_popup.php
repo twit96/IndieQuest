@@ -181,7 +181,7 @@ function checkPostVariables($articles) {
 /**
 * Engine function for the profile popup.
 */
-function doEngine() {
+function doPopupEngine() {
   $articles = array(
     "minecraft",
     "limbo",
@@ -226,6 +226,6 @@ function doEngine() {
 /**
 * Initial Call to Build Popup
 */
-doEngine();
+doPopupEngine();
 
 ?>
