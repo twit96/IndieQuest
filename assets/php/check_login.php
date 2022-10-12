@@ -39,12 +39,13 @@ function checkUser($mysqli, $username) {
 * Returns 1 if username/password entry exists and 0 otherwise.
 */
 function checkPass($mysqli, $username, $password) {
-  $command = 'SELECT COUNT(1) FROM iq_passwords WHERE username = "' . $username . '" AND password = "' . $password . '";';
+  $command = 'SELECT * FROM iq_passwords WHERE username = "' . $username . '" LIMIT 1';
   $result = $mysqli->query($command);
   if (!$result) { die("Query failed: ($mysqli->error <br>"); }
-  // $pass_in_db will be 1 if in database and 0 if not in database
-  $pass_in_db = $result->fetch_row()[0];
-  return $pass_in_db;
+  // check inputted pass against hashed pass in db
+  $stored_pass = $result->fetch_assoc()["password"];
+  if (password_verify($password, $stored_pass)) { return 1; }  // match
+  return 0;  // no match
 }
 
 
@@ -54,7 +55,8 @@ function checkPass($mysqli, $username, $password) {
 * No return value.
 */
 function doInsert($mysqli, $username, $password) {
-  $command1 = 'INSERT INTO iq_passwords VALUES ("' . $username . '", "' . $password . '");';
+  $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+  $command1 = 'INSERT INTO iq_passwords VALUES ("' . $username . '", "' . $hashed_password . '");';
   $result1 = $mysqli->query($command1);
   if (!$result1) { die("Query failed: ($mysqli->error <br>"); }
 
@@ -153,7 +155,7 @@ function doEngine() {
   //$user   = "cs329e_bulko_wittig";
   //$pwd    = "format6arch4swamp";
   //$dbName = "cs329e_bulko_wittig";
-  
+
   // Wittig Portfolio Setup
   $server = "localhost";
   $user   = "iq_user";
