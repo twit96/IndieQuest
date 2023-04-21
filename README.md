@@ -1,3 +1,6 @@
+**IMPORTANT: This codebase should not be used in a production environment without major refactoring. It contains sensitive server information in various files, and the database queries do not use prepared statements, making them vulnerable to SQL injection. This was a group project for an intro to web programming course, and thus it was not heavily focused on web security.**
+
+
 <!-- Page Title -->
 <h1 align="center">IndieQuest</h1><br>
 
